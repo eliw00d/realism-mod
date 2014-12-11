@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "blitz3f_xx"}
+	{bump "$/model/blitz36f_bump"}
+	{specular "blitz36f_sp"}
+	{color "229 229 229 22"}
+	{blend test}
+}

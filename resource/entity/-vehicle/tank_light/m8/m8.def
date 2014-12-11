@@ -1,0 +1,148 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_medium"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
+	
+	{extender "enumerator"}
+	
+	{volume "body3"
+		{component "body"}
+		{tags  "body"}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags  "body"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags  "body"}
+	}
+	{volume "body"
+		{component "body"}
+		{tags  "body"}
+	}
+	{volume "turret1"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "turret2"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "turret3"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "turret4"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "turret5"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "turret6"
+		{component "turret"}
+		{tags "turret"}
+	}
+	
+	("armor_light" turret(38 25 25 0) body(29 29 25 13))
+	("armor_engine"  t(10))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_m7_mgunner"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human"			place(driver) door1(emit1) door2(emit2) visor(driver))
+	("crew_human_visible"	place(gunner) door1(emit1) door2(emit2) visor(main))
+	("crew_human_gunner" 	place(gunner2) visorbone(mgun))
+	("crew_human_visible"	place(commander) door1(emit1) door2(emit2) visor(main))
+	("gunner_visible")
+	{placer 
+		{place "commander" {openForCrush 0}}
+		{place "gunner" {openForCrush 0}}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet75 fg" 38}
+			{item "ammo bullet75 ap" 7}
+			{item "browning" filled {user "mgun"}}
+			{item "ammo hmgun" 400}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{charger "gunner"}
+			{weapon "75mm_m2" filling "ammo bullet75 fg" 1}
+			("abm_low")
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			("abm_mgun_heavy")
+            {basic}
+		}
+	}
+
+	{mass 15200}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.3))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 19}
+			{StartTime  13}
+			{TurnTime   7}
+			{TurnStart  1.1}			
+			{TurnRadius 7} 
+    		{TurnStop   0.6}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears 0.2 0.5 1}
+			{RearGears  0.23}
+		}
+		{FuelBag
+			{volume 350 }	
+			{rate	90 }   
+			{remain 350 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  18}
+    	}
+	}
+
+	{Extension "M8.mdl"}
+
+	{bone "turret"
+		{speed 0.01}
+	}
+	{bone "mgun_rot"
+		{speed 0.007}
+                {limits -8 25}
+	}
+        {bone "foresight4"
+		{limits -1 1}
+        }
+	{bone "turret_mgun"
+		{limits -30 30}
+		{speed 0.03}
+		{terminator}
+	}
+}

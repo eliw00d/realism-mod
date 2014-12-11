@@ -1,0 +1,42 @@
+{breed
+	{skin "us_marine"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite4"}
+	{icon_priority 3}
+	{armors
+		{head helmet_marine_usa}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory
+		{item "thompson" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 5}
+		{item "grenade m61" 2}
+		{item "grenade n73at" 1}
+		{item "smoke grenade" 2}
+		{in_hands 0}
+	}
+}

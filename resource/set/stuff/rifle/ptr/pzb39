@@ -1,0 +1,9 @@
+{from "pattern at_rifle"
+	{entity "pzb39"}
+	{reloadSound "rifle_at"}
+	
+	{projectileDamage 30}
+	("damage" a(30) b(20) c(20) d(20) e(20))
+	
+	("speed" s(1210))
+}

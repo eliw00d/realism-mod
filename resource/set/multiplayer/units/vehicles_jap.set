@@ -1,0 +1,86 @@
+;----- Japanese Empire -----
+
+
+
+
+;°°°Infantry only°°°
+
+{"isuzutx40_inf"    ("vs" c(60) t(inf_only) 	s(jap) n(2) g(a1) sc(0) b(v1) cw(0) cp(0)) {level 1} {cost 0} {fore 1.0}}
+
+
+
+
+;°°°Button 1°°°
+
+{"type97"           ("vs" c(60) t(all inf_only) s(jap) n(2) g(b1) sc(3.50) b(v1) cw(0) cp(0)) {level 2} {cost 70} {fore 1.0}}
+{"isuzutx40_mort" 	("vs" c(60) t(all) 			s(jap) n(3) g(b2) sc(16.25) b(v1) cw(0) cp(0)) {level 4} {cost 325} {fore 1.0}}
+{"ho-ha3mgun"       ("vs" c(300) t(all) 		s(jap) n(4) g(b3) sc(6.25) b(v1) cw(0) cp(0)) {level 6} {cost 125} {fore 0.5}}
+
+{"isuzutx40"        ("vs" c(60) t(all) 			s(jap) n(2) g(b4) sc(2.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}
+{"isuzutx40art"     ("vs" c(60) t(all) 			s(jap) n(2) g(b5) sc(7.50) b(v1) cw(2) cp(0)) {level 1} {cost 150} {fore 1.0}}
+{"isuzutx40_eng"    ("vs" c(60) t(all) 			s(jap) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 8} {cost 250} {fore 0.0}}
+
+
+
+;°°°Button 2°°°
+
+{"type1hmg_stan"    ("vs" c(300) t(all) 		s(jap) n(2) g(c1) sc(4.50)  b(v2) cw(2) cp(5)) {level 1} {cost 90} {fore 0.5}}
+{"type2_20mm"       ("vs" c(300) t(all) 		s(jap) n(1) g(c2) sc(8.50) b(v2) cw(2) cp(5)) {level 3} {cost 170} {fore 0.5}}
+{"type94"	    	("vs" c(0) t(all) 			s(jap) n(2) g(c3) sc(17.50) b(v2) cw(2) cp(5)) {level 5} {cost 350} {fore 1.0}}
+{"type_97_150mm"	    	("vs" c(0) t(all) 			s(jap) n(2) g(c3) sc(17.50) b(v2) cw(2) cp(5)) {level 5} {cost 350} {fore 1.0}}
+
+{"pak47"            ("vs" c(0) t(all) 			s(jap) n(2) g(c4) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 135} {fore 1.0}}
+{"pak57"            ("vs" c(0) t(all) 			s(jap) n(2) g(c5) sc(10.00)  b(v2) cw(2) cp(10)) {level 1} {cost 200} {fore 1.0}}
+{"t90_75m"          ("vs" c(0) t(all medium) 	s(jap) n(2) g(c6) sc(14.00) b(v2) cw(2) cp(15)) {level 1} {cost 280} {fore 1.0}}
+
+{"type4_200mm"          ("vs" c(0) t(all medium) 	s(jap) n(2) g(c6) sc(14.00) b(v2) cw(2) cp(15)) {level 1} {cost 280} {fore 1.0}}
+
+("how" side(jap) name(how_aa) c(0) c1(type93scout) c2(type4_75mm)  	t(all medium heavyaa) g(c7) b(v2) level(8) cost(550) f(1.0))
+("how" side(jap) name(how_b) c(0) c1(type93scout) c2(t91_105m) 			t(all artillery) g(c8) b(v2) level(11) cost(600) f(1.0))
+("how" side(jap) name(how_a) c(0) c1(type93scout) c2(type96_150mm)  	t(all artillery heavy) g(c9) b(v2) level(14) cost(800) f(1.0))
+
+{"ho-ni2"           ("v" c(0) t(all artillery) 			s(jap) n1(2) n2(1) g(10) sc(35.00) b(v2) cw(0) cp(15)) {level 17} {cost 700} {fore 1.0}}
+{"ho-ro"            ("v" c(0) t(all artillery heavy) 	s(jap) n1(2) n2(1) g(11) sc(45.00) b(v2) cw(0) cp(20)) {level 20}  {cost 900} {fore 1.0}}
+{"ha-to"            ("vs" c(0) t(all artillery rocket) 	s(jap) n(5) g(12) sc(65.00) b(v2) cw(0) cp(20)) {level 23} {cost 1300} {fore 1.0}}
+
+
+
+
+;°°°Button 3°°°
+
+{"type93scout"      ("v" c(150) t(all) 				s(jap) n1(4) n2(1) g(d1) sc(7.50) b(v3) cw(0) cp(0)) {level 1} {cost 150} {fore 0.6}}
+{"ha-go"            ("v" c(150) t(all) 				s(jap) n1(2) n2(1) g(d2) sc(8.00) b(v3) cw(0) cp(5)) {level 1} {cost 160} {fore 0.4}}
+{"ke-nu"            ("v" c(150) t(all) 				s(jap) n1(2) n2(1) g(d3) sc(9.00) b(v3) cw(0) cp(5)) {level 10} {cost 180} {fore 0}}
+
+{"chi-ha57"         ("v" c(150) t(all) 				s(jap) n1(3) n2(1) g(d4) sc(10.00) b(v3) cw(0) cp(5)) {level 1} {cost 200} {fore 0}}
+{"chi-ha47"         ("v" c(150) t(all) 				s(jap) n1(4) n2(1) g(d5) sc(12.00) b(v3) cw(0) cp(5)) {level 1} {cost 240} {fore 0}}
+{"chi-ha120"         ("v" c(150) t(all) 				s(jap) n1(4) n2(1) g(d5) sc(12.00) b(v3) cw(0) cp(5)) {level 1} {cost 240} {fore 0}}
+{"isuzutx40_aa"     ("vs" c(150) t(all) 			s(jap) n(4) g(d6) sc(12.00) b(v3) cw(0) cp(5)) {level 15} {cost 240} {fore 0}}
+
+{"ss-d"             ("v" c(150) t(all) 				s(jap) n1(3) n2(1) g(d7) sc(12.50) b(v3) cw(0) cp(0)) {level 1} {cost 250} {fore 0}}
+
+
+
+
+;°°°Button 4°°°
+
+{"chi-he"           ("v" c(0) t(all medium) 		s(jap) n1(3) n2(1) g(e1) sc(15.00) b(v4) cw(0) cp(15)) {level 1} {cost 300} {fore 1.0}}
+{"ho-i"             ("v" c(0) t(all medium) 		s(jap) n1(3) n2(1) g(e2) sc(17.50) b(v4) cw(0) cp(15)) {level 5} {cost 350} {fore 1.0}}
+{"chi-nu"           ("v" c(0) t(all medium) 		s(jap) n1(3) n2(1) g(e3) sc(20.00) b(v4) cw(0) cp(15)) {level 1} {cost 400} {fore 1.0}}
+
+{"chi-to"           ("v" c(0) t(all heavy) 			s(jap) n1(4) n2(1) g(e4) sc(40.00) b(v4) cw(0) cp(30)) {level 1} {cost 800} {fore 1.0}} 
+{"chi-ri"           ("v" c(0) t(all sheavy) 		s(jap) n1(4) n2(1) g(e5) sc(62.50) b(v4) cw(0) cp(40)) {level 20} {cost 1250} {fore 1.0}} 	
+
+
+
+
+;°°°Button 5°°°
+
+{"ho-ni1"           ("v"  c(0) t(all medium) 		s(jap) n1(2) n2(1) g(f1) sc(16.25) b(v5) cw(0) cp(10)) {level 1} {cost 325} {fore 1.0}} 	
+{"ho-ni_3"           ("v"  c(0) t(all medium) 		s(jap) n1(2) n2(1) g(f1) sc(16.25) b(v5) cw(0) cp(10)) {level 1} {cost 325} {fore 1.0}} 
+{"ho-ri"      	    ("v"  c(0) t(all sheavy) 		s(jap) n1(3) n2(1) g(f2) sc(75.00) b(v5) cw(0) cp(40)) {level 10} {cost 1500} {fore 1.0}} 	
+{"ho-ri_1"      	    ("v"  c(0) t(all sheavy) 		s(jap) n1(3) n2(1) g(f2) sc(75.00) b(v5) cw(0) cp(40)) {level 10} {cost 1500} {fore 1.0}} 
+
+
+
+;°°°Button Hero°°°

@@ -1,0 +1,30 @@
+{weapon_bullet			; "chi-ri", "ho-ri"
+	{filling "bullet37"}
+	{fireSound "gun/37mm_pak35"}
+	{reloadSound "pak35"}
+	{cursorReloading "cannon_reload"}
+	{cursor "cannon_on"}
+	{rechargeTime 3}
+	("range_minimum")
+	
+	("speed" s(931))
+	("caliber_minimum")
+	{projectileDamage 55}
+	("damage" a(55) b(44) c(33) d(26) e(18))
+	{parameters "apcr"
+		{cursor "cannon_on_apcr"}
+		{cursorReloading "cannon_reload_apcr"}
+        ("damage" a(80) b(64) c(48) d(36) e(23))
+	}
+	{parameters "fg"
+		{cursor "cannon_on_fg"}
+		{cursorReloading "cannon_reload_fg"}
+	}
+	{parameters "sm"
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}
+	
+	("accuracy_minimum")
+}
+

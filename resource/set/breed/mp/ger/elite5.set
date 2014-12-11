@@ -1,0 +1,43 @@
+{breed
+	{skin "ger-rifleman"}
+	{portrait "ger_elite2"}
+	{nationality ger}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head helmet5_ger}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"stealth"
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory
+		{item "mauzer" filled}
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "grenade m24" 2}
+		{item "panzerfaust weapon" filled}
+		{in_hands 0}
+	}
+}

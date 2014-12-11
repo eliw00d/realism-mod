@@ -1,0 +1,119 @@
+{entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"  "vision_cannon_medium" "muzzle_medium"}
+	{targetSelector "tank"}
+	{Extension "np_sdkfz250_9.mdl"}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_driver_car"} {base "close"}}
+			{reverse 	{end	"emit_body" 1} {base "close" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_gunner_stand"} {base "close_gunner"}}
+			{reverse 	{end	"emit_body" 1} {base "close_gunner" -1}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door"}
+			{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{sensor
+		{visor "gunner" {bone "visor"}}
+	}
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {useVision} {visor "gunner"}}
+	}
+
+	("crew_human" place(driver)	door(emit1) bone(driver) animation(driver)		group(crew))
+	("crew_human" place(commander)	door(emit1) bone(commander) animation(driver)		group(crew))
+	("crew_human" place(gunner)	door(emit1) bone(gunner) animation(gunner)		group(crew))
+	
+	
+	
+
+			{volume "body"
+				{tags "body"}
+				{component "body"}
+				{thickness 8}   
+			}
+			{volume "engine"
+				{tags "engine"}
+				{component "engine"}
+				{thickness 8}
+			}
+			{volume "turret"
+				{tags "turret"}
+				{component "turret"}
+				{thickness 8}
+			}
+	
+	("armor_light" turret(8) body(14.5 8 8 8))
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	("tracks")
+
+	{extender "enumerator"}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 700}
+			{item "ammo bullet20 zenite" 400}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "20mm_kwk30" filling "ammo bullet20 zenite" 10}
+			{charger "gunner"}
+			("abm_zenite")
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "mg34" filled}
+			{LinkBone "mgun"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+		
+	{Chassis
+		{Locomotion ("locomotion")
+                {MaxSpeed	38}
+			(mod "mp" 
+				{MaxSpeed  35}
+			)	
+	  		{maxSpeedAtMaxTurn 16}	
+			{StartTime	10}
+			{BrakeTime	1.5}	
+			{StopTime	2.5}
+			{TurnRadius	8}
+		}
+		(mod "mp"
+			{FuelBag
+				{volume 200 }
+				{rate	  5 } 
+				{remain 200 }
+				{fuel "fuel"}
+			}
+		    {speed
+        		{Normal  32}
+    		}
+		)
+		; left track must be first
+		("tank_trace" fx("tracks_mid") step(0.5) len(0.86) boneleft("FXtraceL2") boneright("FXtraceR2"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+	}
+	{mass 8200}
+}

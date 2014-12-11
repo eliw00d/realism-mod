@@ -1,0 +1,35 @@
+{from "pattern bullet"
+	{tag "smg weapon bullet to_hand"}
+	{filling "ammo pistol" 71}
+	{inventory
+		{size 4 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 4}
+	{reloadSound "mp44"}
+	{Automatic}
+	{traceFreq 1.0}
+
+	{spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 97.5 95.0 92.5 90.0 87.5 85.0 82.5 80.0 75.0}
+	}
+
+	("recoveryTime" r(400))
+	{rechargeTime 2.5}
+	{speed 190}
+	
+	{healthDamage 125}
+	{ProjectileDamage 3}
+	{ProjectileDamageClip 3}
+	{projectileDamageTable {25 3} {100 0}}
+
+	{range 15 15}
+	{burst
+		{short 6 0.5}
+		{long 8 0.5}
+	}
+	
+	("accuracy_smg")	
+}

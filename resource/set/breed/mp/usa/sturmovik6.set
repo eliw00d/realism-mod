@@ -1,0 +1,43 @@
+{breed
+	{skin "us_ranger1_hp"}
+	{portrait "usa_soldier5"}
+	{nationality usa}
+	{icon "stormtrooper6"}
+	{icon_priority 4}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "bar" filled}
+		{item "ammo mgun" 1200}
+		{item "bandage" 5}
+		{item "grenade m61" 2}
+		{item "smoke grenade" 2}
+		{item "dynamite" 1}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

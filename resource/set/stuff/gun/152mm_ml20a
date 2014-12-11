@@ -1,0 +1,12 @@
+{from "pattern gun"		; "isu-152"
+	{filling "bullet152"}
+	{fireSound "gun/howitzer/152mm_ml20"}
+	{reloadSound "tankgun_r04"}
+	{rechargeTime 27.7}
+	("range_grazing_howitzer")
+	
+	("range" r(32))
+	("speed" s(600))
+	{projectileDamage 165}
+	("damage" a(165) b(160) c(152) d(145) e(137))
+}

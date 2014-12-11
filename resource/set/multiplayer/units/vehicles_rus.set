@@ -1,0 +1,53 @@
+;----- Soviet Union -----
+
+
+;°°°Button 1°°°
+{"m72"              ("vs" c(0) t(all) s(rus) n(2) g(b1) sc(4.00) b(v1) cw(0) cp(0)) {level 1} {cost 80} {fore 1.0}}
+{"gaz67b"           ("vs" c(0) t(all) s(rus) n(3) g(b2) sc(5.50) b(v1) cw(0) cp(0)) {level 1} {cost 110} {fore 1.0}}
+{"m3"               ("vs" c(0) t(all) s(rus) n(2) g(b3) sc(7.50) b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 0.5}}
+
+{"zis5"             ("vs" c(0) t(all) s(rus) n(2) g(b4) sc(2.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}
+{"zis5art"          ("vs" c(0) t(all) s(rus) n(2) g(b5) sc(7.50) b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 1.0}}
+{"zis5eng"          ("vs" c(0) t(all) s(rus) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}
+
+{"t20"				("vs" c(0) t(all) s(rus) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 0.0}}
+
+
+;°°°Button 2°°°
+{"maxim"        	("vs" c(0) t(all) s(rus) n(2) g(c1) sc(7.50) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 0.5}}
+{"bm37"             ("vs" c(0) t(all) s(rus) n(2) g(c2) sc(17.50) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 1.0}}
+
+{"k61"              ("vs" c(0) t(all) s(rus) n(2) g(c3) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 250} {fore 1.0}}
+
+{"m37"              ("vs" c(0) t(all) s(rus) n(2) g(c4) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 1.0}}
+{"zis3"             ("vs" c(0) t(all) s(rus) n(2) g(c5) sc(12.75) b(v2) cw(2) cp(10)) {level 1} {cost 250} {fore 1.0}}
+{"zis2"             ("vs" c(0) t(all) s(rus) n(2) g(c6) sc(16.25) b(v2) cw(2) cp(15)) {level 1} {cost 400} {fore 1.0}}
+{"bs3"             	("vs" c(0) t(all) s(rus) n(2) g(c7) sc(16.25) b(v2) cw(2) cp(15)) {level 1} {cost 700} {fore 1.0}}
+
+{"bm13"             ("vs" c(0) t(all) s(rus) n(2) g(c8) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 250} {fore 1.0}}
+
+{"m30_1938"         ("vs" c(0) t(all) s(rus) n(2) g(c9) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 300} {fore 1.0}}
+{"d1"             	("vs" c(0) t(all) s(rus) n(2) g(c10) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 400} {fore 1.0}}
+
+
+;°°°Button 3°°°
+{"ba64"             ("v" c(0) t(all) s(rus) n1(1) n2(1) g(d1) sc(9.00)  b(v3) cw(0) cp(5)) {level 1} {cost 250} {fore 0.6}}
+{"np_m17"           ("v" c(0) t(all) s(rus) n1(1) n2(1) g(d3) sc(9.00)  b(v3) cw(0) cp(5)) {level 1} {cost 450} {fore 0.6}}
+
+
+;°°°Button 4°°°
+{"t34_2"            ("v" c(0) t(all) s(rus) n1(3) n2(1) g(e1) sc(20.00) b(v4) cw(0) cp(15)) {level 1} {cost 600} {fore 1.0}}
+{"t34_3"            ("v" c(0) t(all) s(rus) n1(3) n2(1) g(e2) sc(36.25) b(v4) cw(0) cp(15)) {level 1} {cost 850} {fore 1.0}}
+{"kv85"             ("v" c(0) t(all) s(rus) n1(3) n2(1) g(e3) sc(47.50) b(v4) cw(0) cp(30)) {level 1} {cost 100} {fore 1.0}}
+{"is1"              ("v" c(0) t(all) s(rus) n1(3) n2(1) g(e4) sc(55.00) b(v4) cw(0) cp(30)) {level 1} {cost 115} {fore 1.0}} 	
+{"is2"           	("v" c(0) t(all) s(rus) n1(4) n2(1) g(e5) sc(70.00) b(v4) cw(0) cp(30)) {level 1} {cost 140} {fore 1.0}}
+
+
+;°°°Button 5°°°
+{"su76"             ("v" c(0) t(all) 		s(rus) n1(3) n2(1) g(f1) sc(14.00) b(v5) cw(0) cp(10)) {level 1} {cost 400} {fore 1.0}}
+{"su122"            ("v" c(0) t(all) 		s(rus) n1(3) n2(1) g(f2) sc(40.00) b(v5) cw(0) cp(15)) {level 1} {cost 450} {fore 1.0}}
+{"su85"             ("v" c(0) t(all) 		s(rus) n1(3) n2(1) g(f3) sc(27.50) b(v5) cw(0) cp(15)) {level 1} {cost 700} {fore 1.0}} 	
+;{"su85m"            ("v" c(0) t(all) 		s(rus) n1(3) n2(1) g(f4) sc(27.50) b(v5) cw(0) cp(15)) {level 1} {cost 900} {fore 1.0}}
+{"isu152"           ("v"  c(0) t(all) 		s(rus) n1(4) n2(1) g(f5) sc(67.50) b(v5) cw(0) cp(30)) {level 1} {cost 1000} {fore 1.0}}  
+{"su100"            ("v"  c(0) t(all) 		s(rus) n1(3) n2(1) g(f6) sc(60.00) b(v5) cw(0) cp(30)) {level 1} {cost 1050} {fore 1.0}}	
+{"isu122"           ("v"  c(0) t(all) 		s(rus) n1(3) n2(1) g(f7) sc(42.50) b(v5) cw(0) cp(30)) {level 1} {cost 1100} {fore 1.0}}

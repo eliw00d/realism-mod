@@ -1,0 +1,11 @@
+{from "pattern gun"		; "m8_howitzer"
+	{filling "bullet75"}
+	{fireSound "gun/50to76_cal/75mm_m3"}
+	{reloadSound "gun_r00"}
+	{rechargeTime 10}
+	("range_light_howitzer")
+
+	("caliber_medium")
+	
+	("range" r(64))
+}

@@ -1,0 +1,9 @@
+{from "pattern gun"		; "bt7a"
+	{filling "bullet76 fg"}
+	{fireSound "gun/50to76_cal/76mm_kt26"}
+	{reloadSound "gun_r03"}
+	("range_light_howitzer")
+
+	("range" r(16))
+	("caliber_medium")
+}

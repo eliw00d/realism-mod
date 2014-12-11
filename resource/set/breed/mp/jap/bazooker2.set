@@ -1,0 +1,43 @@
+{breed
+	{skin "jap-engineer"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head helmet1_jap}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "type100smg" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 3}
+		{item "grenade type97" 2}
+		{item "grenade type3at_a" 1}
+		{item "smoke grenade" 1}
+		{item "ammo type_4" 3}
+		{in_hands 0}
+	}
+}

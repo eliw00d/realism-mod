@@ -1,0 +1,27 @@
+{bullet
+	{tag "size_medium big shell fg"}
+	{inventory
+		{size 5 1}
+		{weight 100}
+	}	
+	{entity "nebel_ammo"}
+	{mass 36.05}
+	{view "nebel_ammo"
+		{tail "rocket_smoke" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 15}
+		{area 1 2}
+	}	
+	{damage add blastwave
+		{energy 1.5}
+		{area 8 16}
+	}
+	{damage fire
+		{radius 5}
+		{heating 0.8}
+		{time 5}
+	}		
+}

@@ -1,0 +1,66 @@
+;----- Germany -----
+
+
+;°°°Button 1°°°
+{"r12"              ("vs" c(0) t(all) s(ger) n(2) g(b1) sc(4.00) b(v1) cw(0) cp(0)) {level 1} {cost 80} {fore 1.0}}
+{"kubel_mgun"       ("vs" c(0) t(all) s(ger) n(3) g(b2) sc(5.50) b(v1) cw(0) cp(0)) {level 1} {cost 110} {fore 1.0}}
+{"sdkfz251_1"       ("vs" c(0) t(all) s(ger) n(2) g(b3) sc(6.25) b(v1) cw(0) cp(0)) {level 1} {cost 125} {fore 0.5}}
+
+{"blitz3_6"         ("vs" c(0) t(all) s(ger) n(2) g(b4) sc(2.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}
+{"blitz3_6art"      ("vs" c(0) t(all) s(ger) n(2) g(b5) sc(7.50) b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 1.0}}
+{"blitz3_6eng"      ("vs" c(0) t(all) s(ger) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}
+
+{"steyr_rso"		("vs" c(0) t(all) s(ger) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 0.0}}
+
+;{"sdkfz303"			("v1" c(0) t(all) s(ger) n1(0) n2(0) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}
+
+
+;°°°Button 2°°°
+{"mg42_stan"        ("vs" c(0) t(all) s(ger) n(2) g(c1) sc(6.00) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 0.5}}
+{"sgrw42"           ("vs" c(0) t(all) s(ger) n(2) g(c2) sc(17.50) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 1.0}}
+
+{"flak38_wheeled"   ("vs" c(0) t(all) s(ger) n(2) g(c3) sc(8.50) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 0.5}}
+
+{"pak36"         	("vs" c(0) t(all) s(ger) n(2) g(c4) sc(6.50)  b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 1.0}}
+{"pak38"            ("vs" c(0) t(all) s(ger) n(2) g(c5) sc(11.25) b(v2) cw(2) cp(10)) {level 1} {cost 250} {fore 1.0}}
+{"pak40"            ("vs" c(0) t(all) s(ger) n(2) g(c6) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 400} {fore 1.0}}
+{"flak37"           ("vs" c(0) t(all) s(ger) n(2) g(c6) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 600} {fore 1.0}}
+{"pak43"            ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 750} {fore 1.0}}
+
+{"nebelwerfer41"    ("vs" c(0) t(all) s(ger) n(2) g(c9) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
+{"sdkfz4"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 350} {fore 1.0}}
+
+{"lefh18"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 400} {fore 1.0}}
+{"wespe"            ("v" c(0) t(all) s(ger) n1(4) n2(1) g(c12) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 500} {fore 1.0}}
+{"sfh18"           	("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 600} {fore 1.0}}
+{"hummel"           ("v" c(0) t(all) s(ger) n1(5) n2(1) g(c14) sc(50.00) b(v2) cw(0) cp(20)) {level 1} {cost 700} {fore 1.0}}
+
+
+;°°°Button 3°°°
+{"sdkfz223"         ("v" c(0) t(all) s(ger) n1(1) n2(1) g(d1) sc(9.00)  b(v3) cw(0) cp(5)) {level 1} {cost 250} {fore 0.6}}
+{"sdkfz222"         ("v" c(0) t(all) s(ger) n1(1) n2(1) g(d2) sc(11.50) b(v3) cw(0) cp(5)) {level 1} {cost 300} {fore 0.4}}
+{"pz2l"             ("v" c(0) t(all) s(ger) n1(2) n2(1) g(d3) sc(12.50) b(v3) cw(0) cp(5)) {level 1} {cost 350} {fore 0}}
+{"sdkfz234"         ("v" c(0) t(all) s(ger) n1(2) n2(1) g(d4) sc(15.00) b(v3) cw(0) cp(5)) {level 1} {cost 400} {fore 0}}
+
+{"welberwind"       ("v" c(0) t(all) s(ger) n1(4) n2(1) g(d5) sc(15.00) b(v3) cw(0) cp(5)) {level 1} {cost 400} {fore 0}}
+{"ostwind"       	("v" c(0) t(all) s(ger) n1(4) n2(1) g(d6) sc(20.00) b(v3) cw(0) cp(5)) {level 1} {cost 450} {fore 0}}
+
+
+;°°°Button 4°°°
+{"pz4h"             ("v" c(0) t(all) s(ger) n1(4) n2(1) g(e1) sc(30.00) b(v4) cw(0) cp(15)) {level 1} {cost 700} {fore 1.0}}
+{"pz5g"             ("v" c(0) t(all) s(ger) n1(4) n2(1) g(e2) sc(67.50) b(v4) cw(0) cp(30)) {level 1} {cost 1450} {fore 1.0}}
+{"pz6e"             ("v" c(0) t(all) s(ger) n1(4) n2(1) g(e3) sc(62.50) b(v4) cw(0) cp(30)) {level 1} {cost 1650} {fore 1.0}}
+{"pz6bh"            ("v" c(0) t(all) s(ger) n1(4) n2(1) g(e4) sc(120.00) b(v4) cw(0) cp(40)) {level 1} {cost 2650} {fore 1.0}}
+
+
+;°°°Button 5°°°
+{"marder_3h"        ("v" c(0) t(all) s(ger) n1(3) n2(1) g(f1) sc(26.25) b(v5) cw(0) cp(15)) {level 1} {cost 500} {fore 1.0}}
+{"hetzer"           ("v" c(0) t(all) s(ger) n1(3) n2(1) g(f2) sc(26.25) b(v5) cw(0) cp(15)) {level 1} {cost 650} {fore 1.0}}
+{"stug3g"          	("v" c(0) t(all) s(ger) n1(3) n2(1) g(f3) sc(30.00) b(v5) cw(0) cp(15)) {level 1} {cost 750} {fore 1.0}}
+{"stuh42"          	("v" c(0) t(all) s(ger) n1(3) n2(1) g(f4) sc(30.00) b(v5) cw(0) cp(15)) {level 1} {cost 750} {fore 1.0}}
+{"nashorn"          ("v" c(0) t(all) s(ger) n1(3) n2(1) g(f5) sc(45.00) b(v5) cw(0) cp(30)) {level 1} {cost 900} {fore 1.0}}
+{"jagdpanzer_iv"    ("v" c(0) t(all) s(ger) n1(3) n2(1) g(f6) sc(55.00) b(v5) cw(0) cp(30)) {level 1} {cost 1150} {fore 1.0}}
+{"sturmtiger"       ("v" c(0) t(all) s(ger) n1(4) n2(1) g(f7) sc(110.00) b(v5) cw(0) cp(40)) {level 1} {cost 1600} {fore 1.0}}
+{"jagdpanther"      ("v" c(0) t(all) s(ger) n1(4) n2(1) g(f8) sc(90.00) b(v5) cw(0) cp(30)) {level 1} {cost 1800} {fore 1.0}}
+{"elefant"          ("v" c(0) t(all) s(ger) n1(5) n2(1) g(f9) sc(100.00) b(v5) cw(0) cp(40)) {level 1} {cost 2300} {fore 1.0}}
+{"jagdtiger"        ("v" c(0) t(all) s(ger) n1(5) n2(1) g(f10) sc(110.00) b(v5) cw(0) cp(40)) {level 1} {cost 3000} {fore 1.0}}

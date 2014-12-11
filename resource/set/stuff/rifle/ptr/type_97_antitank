@@ -1,0 +1,15 @@
+{from "pattern at_rifle"
+	{filling "ammo ptr" 7}
+	{entity "type_97_antitank"}
+	{fireSound	"rifle/ptr/type97at"}
+	{reloadSound "ptrd"}
+	
+	{Automatic}
+	{recoveryTime 0.85}  
+	{rechargeTime 6.5}
+	
+	{projectileDamage 40}
+	("damage" a(35) b(30) c(30) d(30) e(30))
+	
+	("speed" s(750))
+}

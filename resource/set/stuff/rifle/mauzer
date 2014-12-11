@@ -1,0 +1,9 @@
+{from "pattern rifle"
+	{filling "ammo rifle" 5}
+	{entity "mauzer"}
+	{fireSound "rifle/mauzer_shot"}
+	{reloadSound "rifle_bolt_five"}
+	
+	("speed" s(755))
+	("accuracy_boost")
+}

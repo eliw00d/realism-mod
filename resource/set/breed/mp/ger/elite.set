@@ -1,0 +1,42 @@
+{breed
+	{skin "ger-paratrooper"}
+	{portrait "ger_elite1"}
+	{nationality ger}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head helmet_paratrooper}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory
+		{item "mauzer" filled}
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "grenade m24" 4}
+		{item "grenade pwm1" 2}
+		{item "smoke grenade" 2}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,27 @@
+{bullet
+	{tag "big shell fg bomb"}
+	{entity "tulip_ammo"}
+	{inventory
+		{size 6 1}
+		{weight 50}
+	}	
+	{mass 27}
+	{view "tulip_ammo"
+		{tail "rocket_smoke_norm" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 8}
+		{area 1 2.5}
+	}
+	{damage add blastwave
+		{energy 1.5}
+		{area 8 15}
+	}
+	{damage fire
+		{radius 5}
+		{heating 1.0}
+		{time 3}
+	}
+}

@@ -1,0 +1,85 @@
+{game_entity
+	(include "/properties/car.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{targetSelector "cannon_rocket"}
+	{collider "truck"}
+	{props "vehicle" "car" "wheeled" "katusha" "turret_rotator" "truck" "vision_vehicle_high"}
+	("armor_medium" args 1.0)
+
+	("crew_2_human")
+	("board_animation" place(driver) board_begin(board_big-midcar_driver) board_end(seat_driver_car) base(doorleft))
+	("board_animation" place(commander) board_begin(board_big-midcar) board_end(seat_passenger) base(doorright))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+
+	{extender "enumerator"}
+
+
+	{volume "gun"
+		{able {bullet 0} {visible 0}}
+		{thickness 6}
+	}
+
+	{volume "turret"
+		{component "turret"}
+		{thickness 1}
+	}
+
+	{extender "inventory"
+		{box
+			{size 8 10}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "weapon katusha" filled}
+			{Barrels 16}
+			{charger "driver"}
+			{gunner "driver"}
+			{StationaryFiring}
+		}
+	}
+
+	{mass 8000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{maxspeed 30}
+	 		{maxSpeedAtMaxTurn 12}
+		}
+				{FuelBag
+					{volume 80 }	
+					{rate	20 }   
+					{remain 80 }
+					{fuel "fuel"}
+				}
+		{speed
+			{Normal  12}
+			{Slow  20}
+		}
+		("car_trace" fx("tracewheel03") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel03") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
+		{DisableMoveWhileFiring}
+	}
+	{Extension "bm13.mdl"}
+	{bone "turret"
+		{limits -10 10}
+	}
+
+	{bone "gun"
+		{limits -45 -15}
+		{speed 0.004}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

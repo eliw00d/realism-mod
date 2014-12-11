@@ -1,0 +1,15 @@
+{from "pattern gun"		; "ha-go"
+	{filling "bullet37"}
+	{fireSound "gun/37mm_pak35"}
+	{reloadSound "pak35"}
+	{rechargeTime 3}
+	("range_minimum")
+	
+	("range" r(24))
+	("speed" s(685))
+	("caliber_minimum")
+	{projectileDamage 50}
+	("damage" a(50) b(38) c(25) d(13) e(0))
+	
+	("accuracy_minimum")
+}

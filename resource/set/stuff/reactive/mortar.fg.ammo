@@ -1,0 +1,17 @@
+{bullet
+	{tag "dropboxed grenade big mortar"}
+	{inventory
+;		{size 4 2}
+		{size 2 1}
+		{weight 70}
+	}	{mass 2}
+	{entity "mortar_ammo"}
+	{view "mortar_ammo"
+	}	{detonationThickness 1}
+	
+	{damage blastwave
+		{energy 2}
+		{area 2 6}
+	}
+
+}

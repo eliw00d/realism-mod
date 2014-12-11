@@ -1,0 +1,16 @@
+{bullet
+	{tag "size_small small shell fg"}
+	{inventory
+		{size 3 1}
+		{weight 70}
+	}	{mass 2}
+	{entity "mortar150_ammo"}
+	{view "mortar150_ammo"
+	}	{detonationThickness 1}
+	
+	{damage blastwave
+		{energy 2}
+		{area 8 12}
+	}
+
+}

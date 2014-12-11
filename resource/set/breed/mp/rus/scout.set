@@ -1,0 +1,50 @@
+{breed
+	{skin "rus-specnaz_hp"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "scout"}
+	{icon_priority 5}
+	{armors
+		{head fieldcap1_rus}
+	}
+	{perks
+		{"health" "500%"
+		}
+		{"power" "300%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"stealth"
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "nagan_pb" filled}
+		{item "ppsh" filled}
+		{item "ammo pistol" 200}
+		{item "bandage" 5}
+		{item "grenade f1" 4}
+		{item "smoke grenade" 2}
+		{item "smoke_paradrop_ammo_heavy grenade" 1}
+		{item "rg42x3 grenade" 4}
+		{item "grenade molotov_coctail" 2}
+		{item "dynamite" 2}
+		{item "knife_rus" 1}
+		{item "matchbox" 1}
+		{in_hands 0}
+	}
+}

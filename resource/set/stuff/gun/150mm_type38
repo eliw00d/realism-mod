@@ -1,0 +1,8 @@
+{from "pattern gun"		; "ho-ro"
+	{filling "bullet150" 6}
+	{fireSound "gun/howitzer/150mm_sfh18"}
+	{reloadSound "gun_r04"}
+	("range_heavy_howitzer")
+
+	("range" r(40))	
+}

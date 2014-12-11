@@ -1,0 +1,21 @@
+{from "weapon katusha"
+	{tag "mrl" "-gun"}
+	{desc "desc/weapon/air_missile"}
+	{filling "ammo arl" 6}
+	{fillingVisible "rocket"}
+	{speed 40}
+	{recoveryTime 1}
+	(mod not "mp"
+		{gravity 5}
+		{spreading
+			{SpreadRadius 3}
+			{SpreadXYRatio 0.8}
+			{SpreadYadjust 15}
+		}
+		{aimtype direct}
+		{speed 100}
+		{recoveryTime 0.4}
+	)
+	{foresight "Foresight3"}
+	{burst {min 2}}
+}

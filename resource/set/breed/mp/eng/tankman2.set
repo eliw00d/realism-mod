@@ -1,0 +1,38 @@
+{breed
+	{skin "eng_tankman_afr"}
+	{portrait "eng_tankman"}
+	{nationality eng}
+	{icon "tankman"}
+	{icon_priority 1}
+	{armors
+		{head "beret_eng1"}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.8
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "sten" filled}
+		{item "ammo pistol" 100}
+		{in_hands 0}
+	}
+}

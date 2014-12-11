@@ -1,0 +1,9 @@
+{from "weapon katusha"
+	{tag "mrl"}
+	{desc "desc/weapon/air_missile"}
+	{filling "ammo arl" 2}
+	{speed 40}
+	{recoveryTime 1}
+	{foresight "Foresight3"}
+	{burst {min 2}}
+}

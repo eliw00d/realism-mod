@@ -1,0 +1,113 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{collider "truck"}
+	{props "vehicle" "car" "wheeled" "vision_vehicle_medium"}
+	{able "emit_on_attack"}
+	("armor_medium" args 1.0)
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	;{extender "enumerator"}
+	("passenger_10_human")
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+	
+	(define "tank_trace"
+   		{Track "left"
+	    		{Tracer
+    				{View %fx} ; "tracks"
+    				{Bone %boneleft}
+	    			{Step %step}			; 0.7 meters
+    			}
+			{TextureScroller
+	    			{Bone "TrackL"}
+    				{Length %len}		; 0.6 meters per animation
+    			}
+    		}
+    		{Track "right"
+    			{Tracer 
+	    			{View %fx}
+    				{Bone %boneright}
+    				{Step %step}			; in meters
+	    		}
+			{TextureScroller
+	    			{Bone "TrackR"}
+    				{Length %len}		; meters per animation
+    			}
+    		}
+	)
+	
+	{mass 3100}
+
+
+	{Chassis
+		{Locomotion ("locomotion")
+      		{MaxSpeed   34}
+				(mod "mp"
+					{maxspeed   31}
+				)
+	  		{maxSpeedAtMaxTurn 17}
+      		{TurnRadius 6}
+      	}
+		{FuelBag
+			{volume 60 }	
+			{rate	15 }   
+			{remain 60 }
+			{fuel "fuel"}
+		}
+		("tank_trace" fx("tracks_mid") step(0.52) len(1.0) boneleft("FXtraceL2") boneright("FXtraceR2"))
+		("car_trace" fx("tracewheel03") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		
+	}
+	{Extension "opel_halftrack.mdl"}
+	{extender "shield"
+			{on}
+	}
+	{component "shield"	
+		{RepairTime 10}
+	}
+	{volume "shield"
+		{thickness 0.3}
+	}
+	{component "cabin"	
+		{RepairTime 12}
+	}
+	{volume "cabin"
+		{thickness 3}
+	}
+	{component "engine"	
+		{RepairTime 10}
+	}
+	{volume "engine"
+		{thickness 3}
+	}
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+	{Volume "bodyback"
+		{thickness 3}
+	}
+}

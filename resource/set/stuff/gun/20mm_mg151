@@ -1,0 +1,24 @@
+{from "pattern gun"		; "fw190"
+	{filling "bullet20 airplane" 1000}
+	{fireSound "gun/zenite/20mm"}
+	{reloadSound "flak38"}
+	{RechargeTime 0.01}
+	("range_zenite")
+	
+	("speed" s(700))
+	("caliber_zenite")
+	("recoveryTime" r(600))
+	{projectileDamage 57}
+	("damage" a(57) b(23) c(18) d(12) e(8))
+	
+	{AimingTolerance 40}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}
+    {RelaxationTime 0}
+	
+	("accuracy_zenite_medium")
+}

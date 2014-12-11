@@ -1,0 +1,44 @@
+{breed
+	{skin "us_com"}
+	{portrait "usa_officer"}
+	{nationality usa}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head "cap1_usa"}
+	}
+	{tags "officer"}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_officer"
+		}
+		{"speed" 1.0
+		}
+		{"field_glass"
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" "lvl_3"
+		}
+	}
+	{inventory
+		{item "colt" filled}
+		{item "ammo pistol" 30}
+		{item "smoke_paradrop_ammo_heavy grenade" 5}
+		{item "knife_union"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

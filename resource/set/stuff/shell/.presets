@@ -1,0 +1,82 @@
+; heavy : 4-6, [2-3, 4-6]
+; medium: 3-4  [2, 3-4]
+; light : 1-2  [1, 2-3]
+
+(define "_tr"
+	{trace
+		{view "/texture/fx/trace"
+			{Light 8}
+			{ScaleY 0.35}
+		}
+		{length (* %0 12)}
+	}
+)
+(define "_tr2"
+	{trace
+		{view "/texture/fx/trace_apcr"
+			{Light 8}
+			{ScaleY 0.35}
+		}
+		{length (* %0 12)}
+	}
+)
+
+(define "fg"
+		; anti-tank
+		{damage blastwave
+			{energy (* %0 1.15)}
+			{area 0.2 0.5}
+		}
+		; anti-personel
+		{damage add blastwave
+			{energy 1.2}
+			{area (* 0.5 (+ %0 5)) (* 0.85 (+ %0 5))}
+		}
+)
+
+(define "fg_medium"
+		; anti-tank
+		{damage blastwave
+			{energy (* %0 1.15)}
+			{area 0.2 0.5}
+		}
+		; anti-personel
+		{damage add blastwave
+			{energy 1.2}
+			{area (* 0.6 (+ %0 5)) (* 0.9 (+ %0 5))}
+		}
+)
+
+(define "fg_heavy"
+		; anti-tank
+		{damage blastwave
+			{energy %0}
+			{area 0.3 1.2}
+		}
+		; anti-apc
+		{damage add blastwave
+			{energy (* %0 0.2)}
+			{area 5.5 6}
+		}
+		; anti-personel
+		{damage add blastwave
+			{energy 1.2}
+			{area 8 16}
+		}
+)
+
+(define "ap"
+	;{damage blastwave
+	;	{energy 1}
+	;	{area 0 1}
+	;}
+	("_tr" args (* %0 6))
+)
+
+(define "apcr"
+	;{damage blastwave
+	;	{energy 1}
+	;	{area 0 1}
+	;}
+	("_tr2" args (* %0 6))
+)

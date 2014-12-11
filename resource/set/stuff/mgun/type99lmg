@@ -1,0 +1,12 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{filling "ammo mgun" 30}
+	{entity "type99lmg"}
+	{fireSound	"mgun/type99lmg_burst/"}
+	{reloadSound "bren"}
+
+	{rechargeTime 2.5}
+	("recoveryTime" r(650))
+	("burst_short")
+	("speed" s(715))
+}

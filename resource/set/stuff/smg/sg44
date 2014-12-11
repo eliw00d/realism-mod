@@ -1,0 +1,14 @@
+{from "pattern smg"
+	{filling "ammo pistol" 30}
+	{mass 5}
+	{entity "sg44"}
+	{fireSound	"smg/mp44_burst/"}
+	{reloadSound "mp44"}	
+
+	{healthDamage 160}
+	("recoveryTime" r(500))
+	("burst_short")
+	("accuracy_carabine")
+	("range" r(8))
+ 	("speed" s(685))
+}

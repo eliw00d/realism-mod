@@ -1,0 +1,31 @@
+{bullet
+	{tag "big size_maximum shell fg bomb"}
+	{inventory
+		{size 5 2}
+		{weight 100}
+	}	
+	{mass 42}
+	{entity "sturmtiger_ammo"}
+	{view "sturmtiger_ammo"
+		{tail "rocket_smoke_st" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave	; anti-tank
+		{energy 40}	; kg
+		{area 4 5}	; m
+	}
+	{damage add blastwave	; anti-building
+		{energy 10}
+		{area 8 16}
+	}
+	{damage add blastwave	; anti-infantry
+		{energy 1.2}
+		{area 24 30}
+	}
+	{damage fire
+		{radius 8}
+		{heating 3}
+		{time 3}
+	}
+}

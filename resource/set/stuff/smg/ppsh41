@@ -1,0 +1,11 @@
+{from "pattern smg"
+	{filling "ammo pistol" 35}
+	{entity "ppsh41"}
+	{fireSound	"smg/ppsh_burst/"}
+	{reloadSound "mp44"}
+
+	{spreading 1.2}
+	("recoveryTime" r(900))
+	("burst_short")
+ 	("speed" s(490))
+}

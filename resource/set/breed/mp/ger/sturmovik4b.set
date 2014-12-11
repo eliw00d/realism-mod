@@ -1,0 +1,42 @@
+{breed
+	{skin "ger-elite-ss"}
+	{portrait "ger_soldier5"}
+	{nationality ger}
+	{icon "stormtrooper4b"}
+	{icon_priority 4}
+	{armors
+		{head helmet4_ger}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "g43" filled}
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "grenade m39" 4}
+		{item "grenade pwm1" 1}
+		{item "dynamite" 1}
+		{in_hands 0}
+	}
+}

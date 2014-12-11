@@ -1,0 +1,17 @@
+{from "pattern gun"		; "cromwell_mk_vi"
+	{filling "bullet95"}
+	{fireSound "gun/howitzer/105mm_m2a1"}
+	("range_grazing_howitzer")
+	
+	("range" r(24))
+	("speed" s(500))
+	("caliber_maximum")
+	{parameters "apcr"
+		("damage" a(127) b(127) c(127) d(127) e(127))
+	}	
+	
+	("accuracy_minimum")
+}
+
+
+

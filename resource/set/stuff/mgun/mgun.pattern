@@ -1,0 +1,39 @@
+{from "pattern bullet"
+	{tag "weapon mgun bullet to_hand"}
+	{filling "ammo mgun" 100}
+	{reloadSound "mg1"}
+	{inventory
+		{size 5 2 }
+		{link_bone "gun_back"}
+		{weight 100}
+	}
+	{entity "mg34"}
+	{mass 12}
+	{traceFreq 1.0}
+	{Automatic}
+
+	{range 60 60}
+
+	("burst_medium")
+	{Spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100.0 95.0 90.0 85.0 80.0 75.0 70.0 65.0 60.0 50.0}
+	}
+	("recoveryTime" r(600))
+	{rechargeTime 5.0}
+	{speed 400}
+
+	{projectileDamage 5}
+	{projectileDamageClip 5}
+	{projectileDamageTable {50 5} {100 0}}
+	{projectileDamageThreshold 1.5}
+	
+	{aimingTolerance 1}
+	
+	{healthDamage     135}
+	{burst
+		{short 7 0.5}
+		{long 30 5}
+	}
+	("accuracy_mgun")
+}

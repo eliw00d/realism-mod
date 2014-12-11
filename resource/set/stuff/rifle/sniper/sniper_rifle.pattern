@@ -1,0 +1,23 @@
+{from "pattern rifle"
+	{tag "sniper"}
+	
+	{special
+		{mode aim}
+		{PrepareTime 3.5}	
+		{PrepareCursor "aimed_shot"}
+		{accuracy 2.5}
+		{damage 2.5}
+		{throw_off}
+	}
+	{recoveryTime 2.0}
+	{rechargeTime 3}
+	{speed 150}
+	{healthDamage 250}
+	{aimingTolerance 0.8}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	{range 60 60}
+	("accuracy_sniper_rifle")
+	("accuracy_boost")
+}

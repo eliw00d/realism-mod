@@ -1,0 +1,25 @@
+{from "pattern gun"		; "bofors"
+	{filling "bullet40 zenite" 4}
+	{fireSound "gun/37mm_61-k"}
+	{reloadSound "61k_reload"}
+	{rechargeTime 0.5}
+	("range_zenite_long")
+	
+	("range" r(24))
+	("speed" s(881))
+	("caliber_minimum")
+	("recoveryTime" r(200))
+	{projectileDamage 67}
+	("damage" a(67) b(52) c(45) d(36) e(20))
+	
+	{AimingTolerance 10}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}
+	{RelaxationTime 0}
+	
+	("accuracy_zenite_high")
+}

@@ -1,0 +1,17 @@
+{game_entity
+	{Extension "sdkfz250_10_xx.mdl"}
+	{Volume "body"
+	}
+	{Volume "engine"
+	}
+	{Volume "part1"
+	}
+	{Volume "trackleft"
+	}
+	{Volume "trackright"
+	}
+	{Volume "turret36"
+	}
+	{Volume "wheelleft1"
+	}
+}

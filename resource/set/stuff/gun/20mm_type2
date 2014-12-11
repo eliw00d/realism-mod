@@ -1,0 +1,25 @@
+{from "pattern gun"		; "type2"
+	{filling "bullet20 zenite" 30}
+	{fireSound "gun/zenite/20mm_burst/"}
+	{reloadSound "flak38"}
+	{rechargeTime 4}
+	("range_zenite")
+	
+	("range" r(16))
+	("speed" s(950))
+	("caliber_zenite")
+	("recoveryTime" r(300))
+	{projectileDamage 56}
+	("damage" a(56) b(50) c(41) d(35) e(29))
+	
+	{AimingTolerance 10}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}	
+	{RelaxationTime 0}
+	
+	("accuracy_zenite_medium")
+}

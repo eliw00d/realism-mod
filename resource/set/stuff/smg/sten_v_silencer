@@ -1,0 +1,11 @@
+{from "pattern smg"
+	{filling "ammo pistol" 32}
+	{entity "sten_mkv_silencer"}
+	{fireSound	"pistol/silent/welrod"}
+	{reloadSound "sten"}
+	
+	{healthDamage 160}
+	("recoveryTime" r(600))
+	("burst_short")
+ 	("speed" s(305))
+}

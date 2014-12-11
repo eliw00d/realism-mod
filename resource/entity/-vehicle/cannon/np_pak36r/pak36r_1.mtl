@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "pak36"}
+	{specular "pak36_sp"}
+	{blend test}
+}

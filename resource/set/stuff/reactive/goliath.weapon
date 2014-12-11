@@ -1,0 +1,8 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo goliath" 1}
+	{foresight "foresight1"}
+	{aimRange 1}				; m
+	{cursor "cannon_on"}
+;	{speed 40}
+}

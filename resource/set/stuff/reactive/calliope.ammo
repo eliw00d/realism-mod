@@ -1,0 +1,22 @@
+{bullet
+	{tag "size_small small shell fg"}
+	{entity "calliope_ammo"}
+	{inventory
+		{size 4 1}
+		{weight 50}
+	}	
+	{mass 20.3}
+	{view "calliope_ammo"
+		{tail "rocket_smoke_norm" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 5}		; kg
+		{area 1.0 2.0}		; m
+	}
+	{damage add blastwave
+		{energy 1.5}
+		{area 8 10}
+	}
+}

@@ -1,0 +1,7 @@
+{from "pattern mgun"
+	{fireSound	"mgun/mg34_burst/"}
+	
+	("recoveryTime" r(800))
+	("burst_long")
+	("speed" s(755))
+}

@@ -1,0 +1,12 @@
+{from "pattern rifle"
+	{filling "ammo rifle" 10}
+	{entity "sks_45"}
+	{fireSound "rifle/svt40_shot/"}
+	{reloadSound "svt40"}
+	
+	{Automatic}
+	{healthDamage 200}
+	{recoveryTime 0.60}
+	("accuracy_rifle")
+	("speed" s(840))
+}

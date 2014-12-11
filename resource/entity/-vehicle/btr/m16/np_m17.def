@@ -1,0 +1,160 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	(include "/properties/car_crew.ext")
+	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled" "flak" "vision_vehicle_medium"}
+
+	{extender "enumerator"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body5"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body6"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body7"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 8}
+	}
+	{component "turret"
+		{RepairTime 20}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{Volume "bumper"
+		{thickness 10}
+	}
+	{component "gun"
+		{RepairTime 15}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	("armor_light" args 1.0)
+	
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_LowTank_stand"} {end "pose_maxson"}}
+			{reverse 	{end	"emit_tank_1"}}
+    	}
+    }
+
+	("crew_2_human")
+
+	("crew_human" place(driver)	door(emit1) bone(driver) animation(driver) 		group(crew))
+	("crew_human" place(commander)	door(emit2) bone(commander) animation(commander) 	group(crew))
+	("crew_human" place(gunner) bone(gunner) door(emit3) animation(gunner))
+
+	{placer
+		{place "driver"		{group "gunner"} {visor "driver"}}
+		{place "commander"	{group "gunner"} {visor "driver"}}
+		{place "gunner"		{group "gunner"} {visor "main"} {turnoff {targetable 0}}}
+	}
+
+("board_animation" place(driver)	  board_begin(board_big-midcar_driver) board_end(seat_driver_car) base(doorleft))
+("board_animation" place(commander)	  board_begin(board_big-midcar) board_end(seat_driver_car) base(doorright))
+
+	{extender "inventory"
+		{Box
+			{item "ammo hmgun" 5000}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{type "mgun_aa"}
+			{RestoreIKAfterAim}
+			{weapon "browning_x4" filled}
+			{Barrels 4}
+			{LinkAnimation "off"}
+			{charger "gunner"}
+			("abm_mgun_heavy")
+		}
+	}  	
+	{sensor
+		{visor "main"
+			{bone "gun_rot"}
+		}
+		{Visor "driver"
+			{vision "tank_driver"}
+			{bone "visor2"}
+		}
+    	{visor "view-around"
+        	{vision "none"}
+        	{bone "visor2"}
+    	}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+
+	{mass 8600}
+
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	30}
+	  		{maxSpeedAtMaxTurn 12}		
+			{StartTime	8}
+			{BrakeTime	1.5}	
+			{StopTime	3}
+			{TurnRadius	5}
+		}
+		{FuelBag
+			{volume 230 }	
+			{rate	40 }   
+			{remain 230 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  20}
+    	}
+		; left track must be first
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.2) boneleft("wheell4") boneright("wheelr4"))
+		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+	}
+	{Extension "m17.mdl"}
+	{bone "turret"
+		{speed 0.02}
+	}
+	{bone "gun_rot"
+		{limits -7 10}
+	}
+}

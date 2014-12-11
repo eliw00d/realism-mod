@@ -1,0 +1,17 @@
+{from "pattern gun"		; "chi-ha47"
+	{filling "bullet47"}
+	{fireSound "gun/47mm_type97"}
+	{reloadSound "gun_r02"}
+	{rechargeTime 4}
+	("range_short")
+	
+	("range" r(24))
+	("speed" s(830))
+	("caliber_minimum")  
+	{projectileDamage 78}
+	("damage" a(78) b(71) c(64) d(58) e(52))
+	
+	;("damage" a(55) b(48) c(40) d(35) e(30)) ; chi-ha
+	
+	("accuracy_minimum")
+}

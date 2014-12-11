@@ -1,0 +1,19 @@
+{from "pattern gun"		; "m4a4vc", "17_pdr", "achilles", "archer"
+	{filling "bullet76"}
+	{fireSound "gun/50to76_cal/76mm_mk4"}
+	{reloadSound "tankgun_r04"}
+	{rechargeTime 6.5}
+	("range_long")
+	
+	("range" r(32))
+	("speed" s(884))
+	("caliber_medium")
+	{projectileDamage 174}
+	("damage" a(174) b(170) c(163) d(156) e(150))
+	{parameters "apcr"
+        ("damage" a(275) b(268) c(256) d(244) e(233))
+	}
+	
+	("accuracy_medium")	
+}
+

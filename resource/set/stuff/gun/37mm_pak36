@@ -1,0 +1,18 @@
+{from "pattern gun"		; "pak36"
+	{filling "bullet37"}
+	{fireSound "gun/37mm_pak35"}
+	{reloadSound "pak35"}
+	{rechargeTime 3.7}
+	("range_minimum")
+	
+	("range" r(24))
+	("speed" s(745))
+	("caliber_minimum")     
+	{projectileDamage 64}	
+	("damage" a(64) b(59) c(52) d(45) e(40))
+	{parameters "apcr"
+        ("damage" a(90) b(71) c(48)	d(32) e(22))
+	}
+	
+	("accuracy_minimum")
+}

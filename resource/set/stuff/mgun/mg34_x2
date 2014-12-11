@@ -1,0 +1,6 @@
+{from "mg34"
+	{filling "ammo mgun" 200}
+	
+	{rechargeTime 10}
+	("recoveryTime" r(1600))
+}

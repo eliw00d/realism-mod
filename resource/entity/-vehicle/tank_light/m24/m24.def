@@ -1,0 +1,135 @@
+{game_entity
+    (include "/properties/tank.ext")
+    (include "/properties/selection/vehicle.inc" scale(1.2))
+
+    {collider "tank.light"}
+    {props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium"}
+    {targetClass "light_tank"}
+
+    {extender "enumerator"}
+	
+    {Volume "Body1"
+        {tags "body"}
+        {component "body"}
+    }
+    {Volume "Body2"
+        {tags "body"}
+        {component "body"}
+    }
+	
+    ("armor_medium" turret(38 25 25 13) body(25 25 19 13))
+    ("armor_engine"  t(25))
+    ("armor_mantlet" t(38))
+
+    ("crew_5_human")
+
+	("gunner_visible")
+	
+    {boarder
+        {anm "left"
+            {forward    {begin  "board_tank_left"}}
+            {reverse    {end    "emit_tank_1_hold"}}
+        }
+        {anm "right"
+            {forward    {begin  "board_tank_right"}}
+            {reverse    {end    "emit_tank_1_hold"}}
+        }
+        {anm "armor"
+            {forward    {begin  "board_LowArmor"}   {end "seat_armor"}}
+            {reverse    {end    "emit_tank_1"}}
+        }
+    }
+
+    ("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+    ("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+    {extender "inventory"
+        {box
+            {item "bullet75 ap" 23}
+            {item "bullet75 fg" 24}
+			{item "browning" filled {user "mgun"}}
+			{item "ammo hmgun" 550}
+            {item "ammo mgun" 3750}
+        }
+    }
+    {Weaponry
+        ("restore_ik_time")
+        {place "gun"
+            {RestoreIKAfterAim}
+            {weapon "75mm_m6" filling "bullet75 ap" 1}
+            {charger "gunner"}
+            ("abm_low")
+        }
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun_heavy")
+		}
+        {place "mgun1"
+            {type "mgun_hull"}
+			{weapon "browning_m19" filled}
+            {foresight "foresight4"}
+            {gunner "driver"}
+            {charger "driver"}
+			("abm_mgun")
+        }
+        {place "mgun2"
+            {type "mgun_coaxial"}
+            {weapon "browning_m19" filled}
+            {foresight "foresight5"}
+            {gunner "commander"}
+            {charger "commander"}
+			("abm_mgun")
+            {basic}
+        }
+    }
+    {mass 18400}
+    {Chassis
+        ("tank_trace" fx("tracks_sm2") step(0.15) len(0.45))
+        {Locomotion ("locomotion")
+            {maxspeed   38}
+            {maxSpeedAtMaxTurn 18}
+            {StartTime  15}
+            {TurnTime   8}
+            {TurnStart  1}
+            {TurnRadius 8}
+            {TurnStop   0.6}
+            {BrakeTime  1.8}
+            {StopTime   2.5}
+            {Gears  0.2 0.5 1}
+            {RearGears  0.27}
+        }
+        {FuelBag
+            {volume 500 }
+            {rate   140 }
+            {remain 500 }
+            {fuel "fuel"}
+        }
+		{speed
+        	{Normal  12}
+        	{Slow  18}
+    	}
+    }
+
+    {Extension "m24.mdl"}
+
+    {bone "turret"
+        {speed 0.01}
+    }
+    {bone "mgun_coaxial"
+        {limits 1}
+    }
+
+        {bone "gun_rot"
+        {limits -10 15}
+                {speed 0.006}
+        }
+
+        {bone "mgun"
+        {limits 15}
+                {speed2 80}
+        }
+}

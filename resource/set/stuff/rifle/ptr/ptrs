@@ -1,0 +1,13 @@
+{from "pattern at_rifle"
+	{filling "ammo ptr" 5}                                          
+	{entity "ptrs"}
+	{reloadSound "ptrs"}
+	
+	{Automatic}
+	{recoveryTime 2.5}
+	
+	{projectileDamage 40}
+	("damage" a(40) b(35) c(35) d(35) e(35))
+	
+	("speed" s(950))
+}

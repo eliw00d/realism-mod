@@ -1,0 +1,16 @@
+{from "pattern gun"		; "m3cannon"
+	{filling "bullet37"}
+	{fireSound "gun/37mm_m6"}
+	{reloadSound "gun_r02"}
+	{rechargeTime 3}
+	("range_minimum")
+	
+	("range" r(24))
+	("speed" s(792))
+	("caliber_minimum")
+	{projectileDamage 78}
+	("damage" a(78) b(74) c(69) d(64) e(59))
+	
+	("accuracy_minimum")
+}
+

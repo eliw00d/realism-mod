@@ -1,0 +1,31 @@
+{weapon_bullet
+	{tag "mrl gun"}
+	{filling "ammo mortar150 fg" 1}
+	{fillingVisible "rocket"}
+
+	{fireSound "reactive/mortar"}
+	{foresight "foresight"}
+	
+	{spreading 
+		{SpreadRadius 15}
+		{radiusFunction
+			0	0.6
+			0.5	0.6
+			2.5	2.5
+		}
+	}
+	{aimRange 130}
+	{maxRange 130}
+	{rechargeTime 10}
+	{gravity 6}
+	{ZeroingAccuracy 0.95 0.9 0.85}
+
+	{projectileDamage 15}
+	{speed 220}
+	{AimingTolerance 0.1}
+	{projectileDamageTable {130 15}}
+	
+	{aimtype curved}
+	{cursor "cannon_on_fg"}
+	{cursorReloading "cannon_reload_fg"}
+}

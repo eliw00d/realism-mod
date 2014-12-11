@@ -1,0 +1,25 @@
+{from "pattern gun"		; "zsu-37", "61-k"
+	{filling "bullet37 zenite" 5}
+	{fireSound "gun/37mm_61-k"}
+	{reloadSound "61k_reload"}
+	{rechargeTime 1.0}
+	("range_zenite_long")
+	
+	("range" r(24))
+	("speed" s(880))
+	("caliber_minimum")
+	("recoveryTime" r(170))
+	{projectileDamage 55}
+	("damage" a(55) b(40) c(32) d(26) e(18))
+	
+	{AimingTolerance 3}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}
+	{RelaxationTime 0}
+	
+	("accuracy_zenite_high")
+}

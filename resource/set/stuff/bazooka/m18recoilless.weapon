@@ -1,0 +1,8 @@
+{from "pattern rpg_weapon"
+	{filling "ammo m18recoilless" 1}
+	{entity "m18rr"}
+    {projectileDamage 100}
+	{fireSound "reactive/grnd_launch"}
+	{range 35 40}
+	("speed" s(185))
+}

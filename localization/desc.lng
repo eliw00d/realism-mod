@@ -1,0 +1,114 @@
+{tags	
+	{"entity"	
+		{"pz2l"	"PzSpWg II"}		
+		{"pz4h" "PzKpfW IV Ausf. H"}		
+		{"pz5g" "PzKpfW Panther Ausf. G"}
+		{"pz6e" "PzKpfW Tiger Ausf. E"}
+		{"pz6bh" "PzKpfW Tiger Ausf. B (H)"}
+		
+		{"welberwind" "Flakpanzer IV Wirbelwind"}
+		{"ostwind" "Flakpanzer IV Ostwind"}
+		
+		{"sdkfz222" "SdKfz 222 Ausf. B"}
+		{"sdkfz223" "SdKfz 223 Ausf. B"}
+		{"sdkfz234" "SdKfz 234/2"}
+		{"sdkfz251_1" "SdKfz 251/1 Ausf. D"}			
+		
+		{"wespe" "Wespe"}
+		{"hummel" "Hummel"}
+		
+		{"marder_3h" "Marder III Ausf. H"}
+		{"hetzer" "Jagdpanzer 38(t)"}
+		{"nashorn" "Panzerjaeger Nashorn"}
+		{"elefant" "Panzerjaeger Tiger (P) Elefant"}
+		
+		{"stug3g" "StuG III Ausf. G"}
+		{"sturmtiger" "38cm RW 61 auf Sturmmoerser Tiger"}
+		
+		{"jagdpanzer_iv" "Panzer IV/70 (V)"}
+		
+		{"mg42_stan" "sMG 42"}
+		{"sgrw42" "8cm GrW 34"}
+		
+		{"flak38_wheeled" "2cm FlaK 38"}
+		{"pak36" "3.7cm PaK 36"}
+		{"pak38" "5cm PaK 38"}
+		{"pak40" "7.5cm PaK 40"}
+		{"pak43" "8.8cm PaK 43/41"}
+		{"flak37" "8.8cm FlaK 37"}
+		{"lefh18" "10.5cm leFH 18"}
+		{"sfh18" "15cm sFH 18"}
+		
+		{"nebelwerfer41" "15cm NbW 41"}
+		{"sdkfz4" "15cm PzW 42 (Sf) auf SdKfz 4/1"}
+		
+		{"maxim" "PM-10/30"}
+		{"bm37" "82mm BM-41"}
+		{"m37" "45mm PP-37"}
+		{"zis3" "76mm DP-42"}
+		{"zis2" "57mm PP-41"}
+		{"bs3" "100mm PP-44"}
+		
+		
+		
+		{"m30_1938" "122mm G-38"}
+		{"d1" "152mm G-43"}
+		
+		{"bm13" "BM-13-16"}
+		
+		{"t34_2" "T-34 obr. 1942"}
+		{"t34_3" "T-34-85 obr. 1944"}
+		{"is1" "IS-85"}
+		{"is2" "IS-2 obr. 1944"}
+		
+		{"np_m17" "ZSU M17"}
+		
+		{"su76" "SU-76M"}
+		{"su85m" "SU-85M"}
+		
+	}
+	{"human"
+		{"mp"
+			{"german_heer_panzer"
+				{"panzer_commander" "Panzer Commander"}
+				{"panzer_crewman" "Panzer Crewman"}
+			
+				{"driver" "Driver"}
+				{"assistant_driver" "Assistant Driver"}
+				{"squad_leader" "Squad Leader"}
+				{"assistant_leader" "Assistant Leader"}
+				{"panzergrenadier" "Panzergrenadier"}
+				{"machine_gunner" "Machine Gunner"}
+				{"assistant_gunner" "Assistant Gunner"}
+			}
+		}
+	}
+	{"ammo"
+		
+	}
+	{"weapon"
+		
+		{"20mm_flak38" "2cm FlaK 38 L/65"}
+		{"20mm_flak38_x4" "2cm FlaK 38 L/65"}
+		{"20mm_kwk30" "2cm KwK 38 L/55"}
+		{"37mm_flak43" "3.7cm FlaK 43 L/89"}
+		{"37mm_pak36" "3.7cm PaK 36 L/45"}
+		{"50mm_kwk39" "5cm KwK 39 L/60"}
+		{"50mm_pak38" "5cm PaK 38 L/60"}
+		{"75mm_kwk40(l48)" "7.5cm KwK 40 L/48"}
+		{"75mm_kwk42" "7.5cm KwK 42 L/70"}
+		{"75mm_pak39" "7.5cm PaK 39 L/48"}
+		{"75mm_pak40" "7.5cm PaK 40 L/46"}
+		{"75mm_stuk40" "7.5cm StuK 40 L/48"}
+		{"75mm_stuk42" "7.5cm StuK 42 L/70"}
+		{"88mm_flak37" "8.8cm FlaK 37 L/56"}
+		{"88mm_kwk36" "8.8cm KwK 36 L/56"}
+		{"88mm_kwk43" "8.8cm KwK 43 L/71"}
+		{"88mm_pak43" "8.8cm PaK 43 L/71"}
+		{"105mm_l31" "10.5cm leFH 18 L/28"}
+		{"105mm_stuh42" "10.5cm StuH 42 L/28"}
+		{"128mm_pak44" "12.8cm PaK 44 L/55"}
+		{"150mm_sfh18" "15cm sFH 18 L/29,5"}
+		{"380mm_rw61" "38cm RW 61 L/5,4"}
+	}
+}

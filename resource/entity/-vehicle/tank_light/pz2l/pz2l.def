@@ -1,0 +1,103 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light" "turret_rotator" "zenite" "vision_vehicle_medium" "muzzle_zenite"}
+	{collider "tank.light"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
+	
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+	}
+
+	("armor_light" turret(30 15) body(30 15 15 8))
+	("armor_engine"  t(10 15 15 8))
+	 
+	{extender "inventory"
+		{box
+            {item "bullet20 zenite" 320}
+            {item "ammo mgun" 2250}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+            {weapon "20mm_kwk30" filling "ammo bullet20 zenite" 10} 
+			{charger "gunner"}        
+			("abm_zenite")
+		}
+		{place "mgun"
+            {type "mgun_coaxial"}
+            {weapon "mg34" filled}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	("crew_2_human")
+	("crew_human" place(commander) door1(emit1) door2(emit2) visor(main))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	{mass 7300}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(1))
+		{Locomotion ("locomotion")
+			{maxspeed   60}
+			{maxSpeedAtMaxTurn 19}
+			{StartTime  14}
+			{TurnTime   7}
+			{TurnStart  1}			
+			{TurnRadius 7} 
+    		{TurnStop   0.6}
+			{BrakeTime  1.5}
+			{StopTime   2}
+     		{Gears  0.2 0.5 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 290 }	
+			{rate	95 }   
+			{remain 290 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  18}
+    	}
+	}
+
+	{Extension "pz2l.mdl"}
+
+	{bone "turret"
+		{speed 0.015}
+	}
+        {bone "foresight3"
+		{limits -1 1}
+        }
+        {bone "gun_rot"
+		{limits -9 18}
+                {speed 0.007}
+        }
+}

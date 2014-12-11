@@ -1,0 +1,10 @@
+{weapon_bullet
+	{filling "ammo calliope" 60}
+	{fireSound "reactive/calliope_burst"}
+	("heavy_artillery")
+
+	{recoveryTime 0.15}		
+	{aimtype direct}
+	{gravity 4.5}	
+	{burst {min 30} {noaiming}}
+}

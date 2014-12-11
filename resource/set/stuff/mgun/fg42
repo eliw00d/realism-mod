@@ -1,0 +1,12 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{filling "ammo mgun" 20}
+	{entity "fg42"}                   
+	{fireSound "mgun/fg42_shot"}
+	{reloadSound "fg42"}
+
+	{rechargeTime 2.5}
+	("recoveryTime" r(750))
+	("burst_short")
+	("speed" s(740))
+}

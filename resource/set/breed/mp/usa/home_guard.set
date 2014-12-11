@@ -1,0 +1,40 @@
+{breed
+	{skin "us_soldier_afri"}
+	{portrait "usa_soldier1"}
+	{nationality usa}
+	{icon "home_guard"}
+	{icon_priority 0}
+	{armors
+		{head "usmc-cap1"}
+	}
+	{perks
+		{"health" "100%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.8
+		}
+		
+		{"pistol" lvl_1
+		}
+		{"smg" lvl_1
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "m1903" filled}
+		{item "ammo rifle" 80}
+		{item "bandage" 2}
+		{item "grenade m61" 1}
+		{in_hands 0}
+	}
+}

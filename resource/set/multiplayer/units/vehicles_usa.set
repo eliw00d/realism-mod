@@ -1,0 +1,58 @@
+;----- USA -----
+
+
+;°°°Button 1°°°
+{"willysmb"         ("vs" c(0) t(all) s(usa) n(3) g(b1) sc(5.50) b(v1) cw(0) cp(0)) {level 1} {cost 110} {fore 1.0}}
+{"m3_usa"           ("vs" c(0) t(all) 		s(usa) n(2) g(b3) sc(7.50) b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 0.5}}
+
+{"gmc"   	    	("vs" c(0) t(all) s(usa) n(2) g(b4) sc(2.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}
+{"gmc_art"          ("vs" c(0) t(all) s(usa) n(2) g(b5) sc(7.50) b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 1.0}}
+{"gmc_eng"          ("vs" c(0) t(all) s(usa) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}
+
+{"gmc_cckw"			("vs" c(0) t(all) s(usa) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 0.0}}
+
+
+;°°°Button 2°°°
+{"browning_stan"    ("vs" c(0) t(all) s(usa) n(2) g(c1) sc(5.00) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 0.5}}
+{"m1mortar"         ("vs" c(0) t(all) s(usa) n(2) g(c3) sc(17.50) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 1.0}}
+
+{"maxson"           ("vs" c(0) t(all) s(usa) n(1) g(c2) sc(7.50) b(v2) cw(2) cp(5)) {level 1} {cost 250} {fore 0.5}}
+{"bofors"           ("vs" c(0) t(all) s(usa) n(2) g(c6) sc(21.25) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
+
+{"m3cannon"         ("vs" c(0) t(all) s(usa) n(2) g(c4) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 1.0}}
+{"m1_57mm"          ("vs" c(0) t(all) s(usa) n(2) g(c5) sc(11.25) b(v2) cw(2) cp(10)) {level 1} {cost 350} {fore 1.0}}
+{"m5"               ("vs" c(0) t(all) s(usa) n(2) g(c6) sc(21.25) b(v2) cw(2) cp(15)) {level 1} {cost 450} {fore 1.0}}
+
+{"m4a3c"            ("v" c(0) t(all) s(usa) n1(3) n2(1) g(c12) sc(70.00) b(v2) cw(0) cp(20)) {level 1} {cost 400} {fore 1.0}}
+
+{"m8_howitzer"      ("vs" c(0) t(all) s(usa) n(2) g(c6) sc(21.25) b(v2) cw(2) cp(15)) {level 1} {cost 200} {fore 1.0}}
+{"m2a1l"            ("vs" c(0) t(all) s(usa) n(2) g(c10) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 350} {fore 1.0}}
+{"m7"               ("v" c(0) t(all) s(usa) n1(3) n2(1) g(c10) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 450} {fore 1.0}}
+{"m114"            	("vs" c(0) t(all) s(usa) n(2) g(c10) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 500} {fore 1.0}}
+{"m12gmc"           ("v" c(0) t(all) s(usa) n1(3) n2(1) g(c11) sc(50.00) b(v2) cw(0) cp(20)) {level 1} {cost 650} {fore 1.0}}
+
+
+;°°°Button 3°°°
+{"m20"      	    ("v" c(0) t(all) s(usa) n1(1) n2(1) g(d1) sc(9.00) b(v3) cw(0) cp(5)) {level 1} {cost 300} {fore 0.6}}
+{"m8grayhound"      ("v" c(0) t(all) s(usa) n1(2) n2(1) g(d3) sc(13.00) b(v3) cw(0) cp(5)) {level 1} {cost 350} {fore 0.4}}
+{"m16"      	    ("v" c(0) t(all) s(usa) n1(2) n2(1) g(d2) sc(11.25) b(v3) cw(0) cp(5)) {level 1} {cost 450} {fore 0}}
+
+
+;°°°Button 4°°°
+{"m5a1"             ("v" c(0) t(all) s(usa) n1(3) n2(1) g(d4) sc(15.00) b(v4) cw(0) cp(5)) {level 1} {cost 400} {fore 0}}
+{"m24"              ("v" c(0) t(all) s(usa) n1(3) n2(1) g(d5) sc(19.00) b(v4) cw(0) cp(5)) {level 1} {cost 650} {fore 0}}
+{"m4a3_75"          ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 800} {fore 1.0}}
+;{"m4a3_76"          ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 1100} {fore 1.0}}
+{"m4a3e2_jumbo"     ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e5) sc(50.00) b(v4) cw(0) cp(30)) {level 1} {cost 1150} {fore 1.0}}
+{"m4a3e8"         	("v" c(0) t(all) s(usa) n1(4) n2(1) g(e4) sc(35.00) b(v4) cw(0) cp(15)) {level 1} {cost 1200} {fore 1.0}}
+{"m4a3e2_jumbo_76"  ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e5) sc(50.00) b(v4) cw(0) cp(30)) {level 1} {cost 1450} {fore 1.0}}
+{"m26_pershing"     ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e6) sc(70.00) b(v4) cw(0) cp(30)) {level 1} {cost 1500} {fore 1.0}}
+{"m26e4"     		("v" c(0) t(all) s(usa) n1(4) n2(1) g(e6) sc(70.00) b(v4) cw(0) cp(30)) {level 1} {cost 2100} {fore 1.0}}
+
+
+;°°°Button 5°°°
+{"m8"               ("v" c(0) t(all) s(usa) n1(3) n2(1) g(e2) sc(17.50) b(v5) cw(0) cp(15)) {level 1} {cost 350} {fore 1.0}}
+{"m4a3_105"         ("v" c(0) t(all) s(usa) n1(3) n2(1) g(e2) sc(17.50) b(v5) cw(0) cp(15)) {level 1} {cost 600} {fore 1.0}}
+{"m18"              ("v" c(0) t(all) s(usa) n1(3) n2(1) g(f1) sc(25.00) b(v5) cw(0) cp(10)) {level 1} {cost 700} {fore 1.0}}
+{"m10wolverine"     ("v" c(0) t(all) s(usa) n1(4) n2(1) g(f2) sc(27.50) b(v5) cw(0) cp(15)) {level 1} {cost 700} {fore 1.0}}
+{"m36"       		("v" c(0) t(all) s(usa) n1(4) n2(1) g(f3) sc(42.50) b(v5) cw(0) cp(15)) {level 1} {cost 850} {fore 1.0}}

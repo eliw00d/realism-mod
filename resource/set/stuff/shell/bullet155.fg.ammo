@@ -1,0 +1,17 @@
+{from "pattern fg"
+	{tag "big" "size_big" "shell_maximum"}
+	{inventory
+		{size 5 1}
+	}
+	("fg_heavy" args 14)
+	{mass 40}	
+
+	{trace
+		{view "/texture/fx/trace"
+			{Light 0}
+			{ScaleY 0}
+		}		
+		{length 0}
+	}
+	{entity "shell_fg_155"}
+}

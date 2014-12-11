@@ -1,0 +1,15 @@
+{from "pattern gun"		; "m1"
+	{filling "bullet57"}
+	{fireSound "gun/50to76_cal/50mm_kwk38"}
+	{reloadSound "gun_r02"}
+	{rechargeTime 4.5}
+	("range_short")
+	
+	("range" r(24))
+	("speed" s(892))
+	("caliber_minimum")
+	{projectileDamage 134}
+	("damage" a(110) b(105) c(98) d(91) e(85))
+	
+	("accuracy_minimum")
+}

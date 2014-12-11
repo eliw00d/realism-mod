@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "track_sdkfz4"}
+	{blend test}
+}

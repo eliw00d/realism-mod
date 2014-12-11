@@ -1,0 +1,13 @@
+{from "pattern rifle"
+	{filling "ammo rifle" 7}
+	{entity "de_lisle"}
+	{fireSound	"pistol/silent/welrod"}
+	{reloadSound "m1carbine"}
+
+	{Automatic}	
+	{recoveryTime 0.6}
+	{healthDamage 300}
+	("accuracy_rifle")
+	("speed" s(420))
+	("accuracy_boost")
+}

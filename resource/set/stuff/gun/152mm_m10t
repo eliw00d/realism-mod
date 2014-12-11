@@ -1,0 +1,9 @@
+{from "pattern gun"		; "kv-2"  
+	{filling "bullet152"}
+	{fireSound "gun/howitzer/152mm_ml20"}
+	{reloadSound "tankgun_r04"}
+	{rechargeTime 43.3}
+	("range_grazing_howitzer")
+
+	("range" r(24))
+}

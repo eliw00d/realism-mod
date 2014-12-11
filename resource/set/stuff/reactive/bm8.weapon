@@ -1,0 +1,15 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo bm8" 24}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/katyusha_burst"}
+	{inventory {noView}}
+	("heavy_artillery")
+
+	{recoveryTime 0.15}
+	{AimingTolerance 0.1}
+	{foresight "foresight"}
+	{gravity 6}
+	{burst {min 24} {noaiming}}
+	{range 170 180}
+}

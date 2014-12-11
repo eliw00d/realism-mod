@@ -1,0 +1,43 @@
+{breed
+	{skin "rus-mgunner_w"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "stormtrooper6b"}
+	{icon_priority 4}
+	{armors
+		{head "winterhat"}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "mosin" filled}
+		{item "ammo rifle" 100}
+		{item "ammo mgun" 100}
+		{item "bandage" 5}
+		{item "grenade f1" 4} 
+		{item "rpg43 grenade" 2}
+		{item "smoke grenade" 2}
+		{in_hands 0}
+	}
+}

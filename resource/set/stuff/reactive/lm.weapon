@@ -1,0 +1,14 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo lm_ammo" 32}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/nebelwerfer_burst"}
+	{inventory {noView}}
+	("heavy_artillery")
+
+	{recoveryTime 0.25}
+	{AimingTolerance 0.1}
+	{foresight "foresight"}
+	{gravity 6}
+	{burst {min 16} {noaiming}}
+}

@@ -1,0 +1,8 @@
+{from "weapon bazooka"
+	{filling "ammo bazooka" 2}
+	{inventory {noView}}
+	{rechargeTime 9}
+	{recoveryTime 0.5}
+	{mass 15}
+	{spreading 0.5}
+}

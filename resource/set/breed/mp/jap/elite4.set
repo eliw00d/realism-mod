@@ -1,0 +1,43 @@
+{breed
+	{skin "jap_sturmovik"}
+	{portrait "jap_elite1"}
+	{nationality jap}
+	{icon "elite2"}
+	{icon_priority 3}
+	{armors
+		{head helmet_jap}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory  
+		{item "type2rifle" filled}		
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "grenade type97" 2}
+		{item "grenade type3at_a" 1}
+		{item "smoke grenade" 2}
+		{item "mine antipersonnel" 5}
+		{in_hands 0}
+	}
+}

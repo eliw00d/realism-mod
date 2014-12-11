@@ -1,0 +1,15 @@
+{from "pattern gun"		; "m4a3"
+	{filling "bullet75"}
+	{fireSound "gun/50to76_cal/75mm_m3"}
+	{reloadSound "gun_r00"}
+	{rechargeTime 6}
+	("range_short")
+	
+	("range" r(32))
+	("speed" s(619))
+	("caliber_medium")
+	{projectileDamage 88}
+	("damage" a(88) b(85) c(81) d(77) e(73))
+	
+	("accuracy_minimum")
+}

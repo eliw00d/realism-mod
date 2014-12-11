@@ -1,0 +1,43 @@
+{breed
+	{skin "us_bazooker"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite_para"}
+	{icon_priority 3}
+	{armors
+		{head helmet_airborne_usa}
+	}
+	{perks
+		{"health" "300%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory
+		{item "m1_carbine" filled}
+		{item "rifle ammo" 150}
+		{item "bandage" 5}
+		{item "grenade m61" 6}
+		{item "grenade n73at" 4}
+		{item "smoke grenade" 2}
+		{item "knife_union"}
+		{in_hands 0}
+	}
+}

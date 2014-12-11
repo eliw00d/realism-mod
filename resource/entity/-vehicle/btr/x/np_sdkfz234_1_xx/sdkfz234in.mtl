@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "sdkfz234_in_xx"}
+	{blend test}
+}

@@ -1,0 +1,131 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "zenite" "turret_rotator" "flak" "opened" "vision_vehicle_high" "muzzle_zenite"}
+	{Extension "ostwind.mdl"}
+
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}	
+	{component "sticky_body"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30}
+	}
+
+	("armor_medium" turret(20 20 20 20) body(80 30 30 20))
+	("armor_engine"  t(30 30 30 20))
+	
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}} {openForCrush}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}			
+		}
+	)
+	
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "driver2" {visor "driver"}}
+		{place "commander" {visor "main"}}
+		{place "gunner" {visor "main"}}
+		{place "charger" {visor "main"}}
+	}	
+	
+	{boarder
+		{door "emit0"}
+		{door "emit1"}
+		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit1" "driver2" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+
+	("crew_human" place(gunner)	    door1(emit2))
+	("crew_human" place(charger)	door1(emit3))
+	("crew_human" place(commander)	door1(emit3))
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_tank_left"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_tank_left"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_right"} {end "pose_gunner_ostwind"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+			
+	{extender "inventory"
+		{box
+			{item "bullet37 zenite" 992} ; 8
+			{item  "ammo mgun" 1350}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "37mm_flak43" filled}
+			{gunner "gunner"}
+			{charger "charger"}	
+			("abm_zenite")				
+		}
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "mg34" filled}
+			{foresight "foresight4"}
+			{gunner "driver2"}
+			{charger "driver2"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+	
+
+	{mass 22000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.7))
+		{Locomotion ("locomotion")
+			{maxspeed        38}
+			{maxSpeedAtMaxTurn 11}
+			{StartTime       14}
+			{TurnStart        2}
+			{TurnTime         9}
+    		{BrakeTime        1} 
+    		{StopTime       1.5} 
+    		{TurnRadius      5.92} 
+    		{TurnStop         1} 
+    		{RearGears      0.4}
+		}
+		{FuelBag
+			{volume 470 }	
+			{rate	235 }   
+			{remain 470 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  10}
+        	{Slow  16}
+    	}
+	}
+}

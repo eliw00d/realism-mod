@@ -1,0 +1,18 @@
+{tags
+	{"mp"		
+		{"army"	
+			{"german_ostheer_infanterie_division" "Ostheer Infanterie Division"}
+			{"german_westheer_infanterie_division" "Westheer Infanterie Division"}
+			
+			{"soviet_army_strelkovy_division" "Soviet Strelkovy Division"}
+		}		
+		{"scene"
+			{"hint_squad1" "Infantry"}
+			{"hint_v1" "Miscellaneous"}
+			{"hint_v2" "Artillery"}
+			{"hint_v3" "Armoured Cars"}
+			{"hint_v4" "Tanks"}
+			{"hint_v5" "Tank Destroyers and Assault Guns"}
+		}
+	}
+}

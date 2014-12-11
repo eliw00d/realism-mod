@@ -1,0 +1,15 @@
+{from "pattern gun"     ; "chi-nu"
+	{filling "bullet75"}
+	{fireSound "gun/75mm_type3"}
+	{reloadSound "gun_r03"}
+	{rechargeTime 5.5}
+	
+	("range" r(32))
+	("speed" s(680))
+	("range_short")
+	{projectileDamage 90}
+	("damage" a(90) b(83) c(78) d(73) e(65))
+	
+	("accuracy_low")
+}
+

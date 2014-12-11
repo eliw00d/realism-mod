@@ -1,0 +1,38 @@
+{breed
+	{skin "rus_tankman_hp"}
+	{portrait "rus_tankman"}
+	{nationality rus}
+	{icon "tankman"}
+	{icon_priority 0}
+	{armors
+		{head tankhelmet_rus}
+	}
+	{perks
+		{"health" "100%"
+		}
+		{"power" "50%"
+		}
+       	{"vision" "mp_soldier"
+		}
+		{"speed" 0.8
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "nagan" filled}
+		{item "ammo pistol" 7}
+		{in_hands 0}
+	}
+}

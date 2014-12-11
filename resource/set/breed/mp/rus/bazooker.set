@@ -1,0 +1,42 @@
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "bazooker"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap_rus}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "weapon bazooka" filled}
+		{item "ppsh" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 3}
+		{item "grenade rpg40" 1}
+		{item "ammo bazooka" 7}
+		{in_hands 0}
+	}
+}

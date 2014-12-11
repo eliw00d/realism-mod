@@ -1,0 +1,14 @@
+{from "pattern pistol"
+	{filling "ammo pistol" 10}
+	{inventory
+		{weight 100 }
+		{size 3 1}
+	}
+	{mass 2.5}
+	{entity "hdm_oss"}
+	{fireSound	"pistol/silent/welrod"}
+	
+	{spreading 0.5}
+	{healthDamage 300}
+	{reloadSound "colt"}
+}

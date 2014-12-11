@@ -1,0 +1,11 @@
+{from "pattern rpg_ammo"
+	{entity "panzershreck_ammo"}
+	{tag "pierce"}
+	{view "panzershreck_ammo"
+		{tail "bazooka_tail" "tail"}
+	}
+	{damage blastwave
+		{energy 1}
+		{area 3 9}
+	}
+}

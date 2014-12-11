@@ -1,0 +1,12 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{filling "ammo mgun" 20}
+	{entity "bar"}
+	{fireSound	"mgun/bar_burst/"}
+	{reloadSound "bar"}
+
+	{rechargeTime 2.5}
+	("recoveryTime" r(650))
+	("burst_short")
+	("speed" s(853))
+}

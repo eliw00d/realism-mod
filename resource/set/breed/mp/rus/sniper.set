@@ -1,0 +1,46 @@
+{breed
+	{skin "rus-sniper"}
+	{portrait "rus_soldier4"}
+	{nationality rus}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head fieldcap1_rus}
+	}
+	{perks
+		{"health" "100%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_sniper"
+		}
+		{"speed" 1.0
+		}
+		{"stealth"
+		}
+		{"telescope"
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "mosin_s" filled}
+		{item "ammo rifle" 50}
+		{item "bandage" 5}
+		{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_rus"}
+		{in_hands 0}
+	}
+}

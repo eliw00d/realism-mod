@@ -1,0 +1,15 @@
+{bullet
+	{tag "ammo ap rocketlauncher shell dropboxed cumulative"}
+	{inventory
+		{weight 100}
+		{size 2 1}
+	}	
+	{damage blastwave
+		{energy 1}
+		{area 2 8}
+	}
+	{cumulative 0.7}
+	{mass 2.75}
+	
+	{possibleDamageRadius 4}
+}

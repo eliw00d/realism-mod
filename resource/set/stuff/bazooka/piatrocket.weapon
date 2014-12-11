@@ -1,0 +1,17 @@
+{from "pattern rpg_weapon"
+	{filling "ammo piatrocket" 1}
+	{fillingVisible "piatrocket"}
+	
+	{preloaded}
+	{mass 6}
+	{entity "piat"}
+	{fireSound "reactive/launch04"}
+  	{reactive 0}
+
+
+	{DisableRicochet}
+	{gravity 2.5}
+	{curve "cumulative"}
+    {projectileDamage 102}
+	("speed" s(137))
+}

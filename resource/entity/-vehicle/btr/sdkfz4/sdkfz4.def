@@ -1,0 +1,98 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "sdkfz4.mdl"}
+	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled" "nebelwerfer" "vision_vehicle_high"}
+	{targetClass "armoredcar" "ap fg"}
+	{targetSelector "cannon_rocket"}
+	{extension "crew.ext"}	
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{volume "gun"
+		{thickness 10}
+	}
+	{volume "turret"
+		{thickness 10}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "engine"
+		{thickness 8}
+	}
+	
+	("armor_medium" args 1.0)
+
+	{component "turret"
+		{RepairTime 20}
+	}
+	{component "gun"
+		{RepairTime 15}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo panzerwerfer42" 20}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "weapon panzerwerfer42" filled}
+			{charger "driver"}
+			{gunner "driver"}
+			{Barrels 10}
+			{StationaryFiring}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")     
+
+	{mass 8500}
+
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed 40}
+	  		{maxSpeedAtMaxTurn 12}	
+		}
+		{FuelBag
+			{volume 80}
+			{rate	50} 
+			{remain 80}
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  20}
+    	}
+		; left track must be first
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.7) boneleft("FXtraceL2") boneright("FXtraceR2"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		{DisableMoveWhileFiring}
+	}
+	{bone "gun"		
+		{limits -12 80}
+	}
+	{bone "turret"	
+		{limits -145 145}
+		{speed 0.008}
+	}
+	{brain
+		{properties
+			{fire_mode hold}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{breed
+	{skin "eng-smg"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "at_rifle"}
+	{icon_priority 3}
+	{armors
+		{head "helmet1_eng"}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "boyes" filled}
+		{item "sten" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 3}
+		{item "grenade n73at" 1}
+		{item "ammo ptr" 25}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,11 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{filling "ammo mgun" 47}
+	{entity "lewis_gun"}
+	{fireSound	"mgun/lewis_burst/"}
+	{reloadSound "bren"}
+
+	("recoveryTime" r(550))
+	("burst_short")
+	("speed" s(740))
+}

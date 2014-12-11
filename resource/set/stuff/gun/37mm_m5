@@ -1,0 +1,30 @@
+{weapon_bullet			; "m3-lee"
+	{filling "bullet37"}
+	{fireSound "gun/37mm_m6"}
+	{reloadSound "gun_r02"}
+	{cursor "cannon_on"}
+	{cursorReloading "cannon_reload"}
+	{rechargeTime 3}
+	("range_minimum")
+	
+	("speed" s(792))
+	("caliber_minimum")
+	{projectileDamage 82}
+	("damage" a(82) b(62) c(44) d(31) e(22))
+	{parameters "apcr"
+		{cursor "cannon_on_apcr"}
+		{cursorReloading "cannon_reload_apcr"}
+        ("damage" a(107) b(82) c(59) d(41) e(27))
+	}
+	{parameters "fg"
+		{cursor "cannon_on_fg"}
+		{cursorReloading "cannon_reload_fg"}
+	}
+	{parameters "sm"
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}
+	
+	("accuracy_minimum")
+}
+

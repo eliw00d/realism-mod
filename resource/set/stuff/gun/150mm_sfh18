@@ -1,0 +1,10 @@
+{from "pattern gun"    ; "hummel", "sfh18"
+	{filling "bullet150"}
+	{fireSound "gun/howitzer/150mm_sfh18"}
+	{reloadSound "gun_r04"}
+	{rechargeTime 15}
+	("range_heavy_howitzer")	
+	
+	("range" r(80))
+	;("speed" s(495))
+}

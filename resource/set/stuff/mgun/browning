@@ -1,0 +1,26 @@
+{from "pattern mgun"
+	{tag "itemin2hands"}
+	{filling "ammo hmgun" 100}
+	{entity "browningm2"}
+	{fireSound	"mgun/browning_burst/"}
+	{reloadSound "ptrd"}
+	{inventory
+		{size 6 2 }
+	}
+	("burst_long")
+	{cursor "zenite_on"}
+	{cursorReloading "zenite_reload"}
+	{mass 34}
+
+	("recoveryTime" r(500))
+	{rechargeTime 6.0}
+
+	{healthDamage 200}
+	{projectileDamage 23}
+	{projectileDamageTable {100 28} {250 25} {500 19} {750 5}}
+	{projectileDamageThreshold 1.1}
+	{calibre 12}	
+	
+	("accuracy_mgun")
+	("speed" s(856))
+}

@@ -1,0 +1,40 @@
+{breed
+	{skin "us_mgun"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "mg2"}
+	{icon_priority 2}
+	{armors
+		{head helmet_novice}
+	}
+	{perks
+		{"health" "200%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_1
+		}
+		{"smg" lvl_1
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "browning_m19a6" filled}
+		{item "ammo mgun" 900}
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

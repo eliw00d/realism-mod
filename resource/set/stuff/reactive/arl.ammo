@@ -1,0 +1,27 @@
+{bullet
+	{tag "big shell fg bomb"}
+	{inventory
+		{size 6 1}
+		{weight 100}
+	}	
+	{mass 42}
+	{entity "katusha_ammo"}
+	{view "katusha_ammo"
+		{tail "rocket_smoke" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 25}	; kg
+		{area 0.5 3.5}		; m
+	}
+	{damage add blastwave
+		{energy 2.5}
+		{area 10 20}
+	}
+	{damage fire
+		{radius 8.5}
+		{heating 0.8}
+		{time 5}
+	}
+}

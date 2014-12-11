@@ -1,0 +1,18 @@
+{from "pattern gun"		; "m26_super_pershing"
+	{filling "bullet90"}
+	{fireSound "gun/85to100_cal/90mm_m3"}
+	{reloadSound "tankgun_r02"}
+	{rechargeTime 7}
+	("range_maximum")
+
+	("range" r(40))
+	("speed" s(953))
+	("caliber_large")            
+	{projectileDamage 198}
+	("damage" a(198) b(197) c(192) d(184) e(177))
+	{parameters "apcr"
+        ("damage" a(358) b(346) c(326) d(307) e(288))
+	}
+	
+	("accuracy_high") 
+}

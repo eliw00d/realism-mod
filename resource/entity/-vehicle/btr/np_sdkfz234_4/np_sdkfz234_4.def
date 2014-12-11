@@ -1,0 +1,158 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "-turret" "wheeled" "vision_vehicle_medium" "muzzle_medium"}
+	{targetClass "armoredcar" "ap fg bullet"}
+	{targetSelector "tank"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	{extension "crew.ext"}
+	{sensor
+		{visor "main"
+			{vision "tank_main-l"}
+		}
+		{visor "gunner" {bone "visor1"}}
+	}
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {useVision} {visor "gunner"}}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30}
+		}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 10
+		    {front 15}
+		}
+	}
+	{component "turret"
+		{RepairTime 20}
+	}
+
+	{volume "engine"
+		{thickness 10
+			{rear 15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+	}
+	
+	("armor_medium" args 1.1)
+	 {Placer
+	         {place "canr1"
+	            {entity "can"}
+	            {Linkbone "canr1"}
+	            {handlebone "basis"}
+	            {obstacle disable}
+	         }
+	         {place "canr2"
+	                 {entity "can"}
+	                  {Linkbone "canr2"}
+	                  {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+	        {place "canl1"
+	                 {entity "can"}
+	                  {Linkbone "canl1"}
+	                  {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+	         {place "canl2"
+	                 {entity "can"}
+	                  {Linkbone "canl2"}
+	                  {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+	   
+	 }
+	 (define "define_place"
+	          {placer
+	             {place "%place"
+	                {linkbone "%place"}
+	                {attach squat_lie}
+	                {turnoff {shadow}}
+	                {obstacle disable}
+	             }
+	          }
+	          {Volume "%place"
+	             {tags "attach" "attach_%place"}
+	             {able clear {bullet 0} {touch 1}}
+	          }
+	)
+	{extender "inventory"
+		{box
+			{item "bullet75 ap" 30}
+			{item "bullet75 apcr" 3}
+			{item "bullet75 fg" 10}
+			{item "repair_kit" 1}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "75mm_pak40" filled}
+			{charger "gunner"}
+			("abm_low")
+		}
+	}	
+	
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 11750}
+	{Chassis
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
+		{Locomotion ("locomotion")
+			{MaxSpeed	38}
+	  		{maxSpeedAtMaxTurn 19}		
+			{StartTime	9}
+			{BrakeTime	1.5}	
+			{StopTime	3}
+			{TurnRadius	7}
+		}
+		{FuelBag
+			{volume 360 }	
+			{rate	35 }   
+			{remain 360 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  20}
+    	}
+	}
+	{Extension "sdkfz234_4.mdl"}
+	
+	{bone "turret"
+		{speed 0.018}
+	}
+	{bone "gun_rot"
+		{speed 0.02}
+	}
+}

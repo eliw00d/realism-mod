@@ -1,0 +1,168 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "opened" "vision_vehicle_high" "muzzle_large"}
+
+	{extender "enumerator"}
+	
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{component "sticky_body"}
+
+	
+	{Volume "Mgun_rot"
+		{thickness 10}
+	}
+	{volume "body1"
+		{component "body"}
+		{thickness 108}
+		{tags "body"}
+	}
+	{volume "body2"
+		{thickness 15}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "body3"
+		{thickness 15}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "shield1"
+		{thickness 30}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "shield2"
+		{thickness 13}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "shield3"
+		{thickness 13}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "shield4"
+		{thickness 13}
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "inventory"
+        {thickness 2}
+	}
+	
+	("armor_spa_heavy" armor(64 38 38 20))
+	("armor_engine"  t(30 38 38 20))
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_left"} {end "seat_m7_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_tank_left"} {end "seat_m7_com"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "crew"
+			{forward	{begin	"board_tank_right"} {end "seat_m7_mgunner"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human_visible_anm" place(driver)		door1(emit1) door2(emit2) anm_left(driver) anm_right(driver) visor(driver))
+	("crew_human_visible_anm" place(gunner)		door1(emit1) door2(emit2) anm_left(gunner) anm_right(gunner) visor(main))
+	("crew_human_visible_anm" place(commander)	door1(emit1) door2(emit2) anm_left(commander) anm_right(commander) visor(main))
+	("crew_human_visible_anm" place(gunner2)	door1(emit1) door2(emit2) anm_left(crew) anm_right(crew) visor(main))
+	("gunner_visible")
+	{placer 
+		{place "driver" {openForCrush 0}}
+		{place "gunner" {openForCrush 0}}
+	}	
+	{sensor
+		{visor "main"
+			{bone "foresight1"}
+		}
+	}
+
+	{extender "inventory"
+		{box
+            {item "ammo bullet105 fg" 60}
+			{item "browning" filled {user "mgun"}}
+			{item "ammo hmgun" 1500}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_m2a1" filling "ammo bullet105 fg" 6}
+			{charger "gunner"}
+			{StationaryFiring}
+			("abm_howitzer")
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			("abm_mgun_heavy")
+			{basic}
+		}
+	}
+
+	{mass 23000}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.6))
+		{Locomotion ("locomotion")
+			{MaxSpeed   27}
+			{maxSpeedAtMaxTurn 12}
+			{StartTime  16}
+			{TurnStart  1.8}			
+			{TurnTime   11}
+			{TurnRadius 9} 
+    		{TurnStop   0.8}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears  0.2 0.5 1}
+			{RearGears  0.34}		
+		}
+		{FuelBag
+			{volume 660 }	
+			{rate	130 }   
+			{remain 660 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  10}
+        	{Slow  16}
+    	}
+		{DisableMoveWhileFiring}
+	}
+
+	{Extension "M7.mdl"}
+
+	{bone "foresight1"
+		{limits -15 15}
+		{speed 0.004}
+	}
+	{bone "gun_rot"
+		{limits -5 50}
+		{speed 0.004}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}
+

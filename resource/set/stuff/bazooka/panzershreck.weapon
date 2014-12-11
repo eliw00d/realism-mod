@@ -1,0 +1,8 @@
+{from "pattern rpg_weapon"
+	{filling "ammo panzershreck" 1}
+	{entity "panzershreck"}
+    {projectileDamage 230}
+	{fireSound "reactive/launch03"}
+	("speed" s(110))
+}
+

@@ -1,0 +1,50 @@
+{breed
+	{skin "eng_sniper"}
+	{portrait "eng_soldier5"}
+	{nationality eng}
+	{icon "scout"}
+	{icon_priority 5}
+	{armors
+		{head beret_eng}
+	}
+	{perks
+		{"health" "500%"
+		}
+		{"power" "300%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"stealth"
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "welrod" filled}
+		{item "sten_v_silencer" filled}
+		{item "ammo pistol" 200}
+		{item "bandage" 5}
+		{item "grenade mk1" 4}
+		{item "smoke grenade" 2}
+		{item "smoke_paradrop_ammo_heavy grenade" 1}
+		{item "grenade n73at" 4}
+		{item "grenade molotov_coctail" 2}
+		{item "dynamite" 2}
+		{item "knife_union" 1}
+		{item "matchbox" 1}
+		{in_hands 0}
+	}
+}

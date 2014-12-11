@@ -1,0 +1,16 @@
+{from "pattern rifle"
+	{filling "ammo rifle" 15}
+	{entity "m1_carbine"}
+	{fireSound "rifle/m1carbine_shot"}
+	{reloadSound "m1carbine"}
+
+	{burst
+		{short 1 0.5}
+		{Long 3 0.5}
+	}
+	{Automatic}
+	{healthDamage 150}
+	{recoveryTime 0.25}
+	("accuracy_carabine")
+	("speed" s(590))
+}

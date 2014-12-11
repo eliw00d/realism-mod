@@ -1,0 +1,12 @@
+{from "pattern gun"		; "chi-ha 120mm"
+	{filling "bullet120 fg"}
+	{fireSound "gun/120mm_type97"}
+	{reloadSound "tankgun_r04"}
+	("range_grazing_howitzer")
+	
+	("range" r(48))	
+	
+	("caliber_maximum")
+	
+	("accuracy_minimum")
+}

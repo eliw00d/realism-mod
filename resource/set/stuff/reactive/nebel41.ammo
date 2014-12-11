@@ -1,0 +1,22 @@
+{bullet
+	{tag "size_small small shell fg"}
+	{inventory
+		{size 5 1}
+		{weight 100}
+	}	
+	{entity "nebelwerfer41_ammo"}
+	{mass 36.05}
+	{view "nebelwerfer41_ammo"
+		{tail "rocket_smoke_norm" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 10}
+		{area 1 2}
+	}	
+	{damage add blastwave
+		{energy 1.5}
+		{area 8 12}
+	}		
+}

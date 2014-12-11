@@ -1,0 +1,16 @@
+{from "pattern gun"		; "comet"
+	{filling "bullet77"}
+	{fireSound "gun/50to76_cal/76mm_mk4"}
+	{reloadSound "tankgun_r04"}
+	{rechargeTime 6.5}
+	("range_medium")
+	
+	("range" r(32))
+	("speed" s(850))
+	("caliber_medium")
+	{projectileDamage 147}
+	("damage" a(147) b(143) c(137) d(131) e(126))
+	
+	("accuracy_medium")	
+}
+

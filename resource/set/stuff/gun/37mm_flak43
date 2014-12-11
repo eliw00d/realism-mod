@@ -1,0 +1,25 @@
+{from "pattern gun"		; "ostwind"
+	{filling "bullet37 zenite" 8}
+	{fireSound "gun/37mm_61-k"}
+	{reloadSound "61k_reload"}
+	{rechargeTime 0.3}
+	("range_zenite_long")
+	
+	("range" r(24))
+	("speed" s(770))
+	("caliber_minimum")
+	("recoveryTime" r(250))
+	{projectileDamage 68}
+	("damage" a(68) b(40) c(32) d(26) e(18))
+	
+	{AimingTolerance 3}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}
+	{RelaxationTime 0}
+	
+	("accuracy_zenite_high")
+}

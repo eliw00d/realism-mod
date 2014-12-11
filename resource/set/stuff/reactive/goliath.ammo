@@ -1,0 +1,13 @@
+{bullet
+	{tag "big shell fg bomb"}
+	{inventory
+		{size 0 0}
+		{weight 100}
+	}
+	{entity "goliath_ammo"}
+	{mass 100}
+	{damage blastwave
+		{energy 150}
+		{area 10 15}
+	}
+}

@@ -1,0 +1,7 @@
+{from "weapon bazooka"
+	{filling "ammo type_4" 1}
+	{entity "type_4at"}
+    	{projectileDamage 150}
+	{fireSound "reactive/grnd_launch"}
+	("speed" s(120))
+}

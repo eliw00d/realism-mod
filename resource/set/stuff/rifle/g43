@@ -1,0 +1,12 @@
+{from "pattern rifle"
+	{filling "ammo rifle" 10}
+	{entity "g43"}
+	{fireSound "rifle/g43_shot/"}
+	{reloadSound "m1carbine"}
+	
+	{Automatic}
+	{healthDamage 175}
+	{recoveryTime 0.35}
+	("accuracy_automatic_rifle")
+	("speed" s(745))
+}

@@ -1,0 +1,19 @@
+{from "pattern gun"		; "pak39"
+	{filling "bullet75"}
+	{fireSound "gun/50to76_cal/75mm_kwk40"}
+	{reloadSound "gun_r03"}
+	{rechargeTime 7.6}
+	("range_medium")
+	
+	("range" r(32))
+	("speed" s(750))
+	("caliber_medium")
+	{projectileDamage 135}                        
+	("damage" a(135) b(130) c(123) d(116) e(109))
+	{parameters "apcr"
+        ("damage" a(176) b(167) c(154) d(141) e(130))
+	}
+	
+	("accuracy_low")	
+}
+

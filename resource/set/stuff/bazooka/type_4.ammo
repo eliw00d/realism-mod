@@ -1,0 +1,12 @@
+{from "pattern rpg_ammo"
+	{entity "type4rocket_ammo"}
+	{tag "pierce"}
+	{view "bazooka_ammo"
+		{tail "bazooka_tail" "tail"}
+	} 
+	{damage blastwave
+		{energy 1}
+		{area 2 8}
+	}
+}
+

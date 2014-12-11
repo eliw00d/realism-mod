@@ -1,0 +1,11 @@
+{from "pattern rpg_ammo"
+	{entity "panzerfaust_ammo"}
+	{tag "pierce"} 
+	{view "panzerfaust_ammo"
+		{tail "pfaust_tail" "tail"}
+	}
+	{damage blastwave
+		{energy 1}
+		{area 2 8}
+	}
+}

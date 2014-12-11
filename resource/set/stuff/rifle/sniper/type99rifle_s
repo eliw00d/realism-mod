@@ -1,0 +1,8 @@
+{from "pattern sniper_rifle"
+	{filling "ammo rifle" 5}
+	{entity "type99rifle_s"}
+	{fireSound "rifle/type99rifle_s"}
+	{reloadSound "rifle_bolt_five"}
+	
+	("speed" s(730))
+}

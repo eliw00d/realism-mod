@@ -1,0 +1,122 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled" "with_gun" "vision_vehicle_low" "muzzle_small"}
+	{targetClass "armoredcar" "ap fg bullet"}
+	{targetSelector "tank"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	{extension "crew.ext"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 10
+		    {front 30}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "turret"
+		{RepairTime 20}
+	}
+
+	{volume "engine"
+		{thickness 10
+			{rear 15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+	}
+	
+	("armor_medium" args 1.1)
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet50 ap" 27}
+			{item "ammo bullet50 fg" 27}
+			{item "ammo mgun" 1050}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "50mm_kwk39" filled}			
+			("abm_low")
+			{charger "commander"}
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "mg42" filled}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+	}  	
+	{sensor
+		{visor "main"
+			{vision "tank_main-l"}
+		}
+	}
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 11750}
+	{Chassis
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
+		{Locomotion ("locomotion")
+			{MaxSpeed	80}
+	  		{maxSpeedAtMaxTurn 19}		
+			{StartTime	9}
+			{BrakeTime	1.5}	
+			{StopTime	3}
+			{TurnRadius	14.9}
+		}
+		{FuelBag
+			{volume 360 }	
+			{rate	36 }   
+			{remain 360 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  20}
+    	}
+	}
+	
+	{Extension "sdkfz234.mdl"}
+
+	{bone "turret"
+		{speed 0.018}
+	}
+}

@@ -1,0 +1,23 @@
+{from "pattern pistol"
+	{filling "ammo flaer" 5}
+	{entity "flaergun"}
+	{fireSound	"pistol/flaer"}
+	{range 55 60}
+	{gravity 2}
+	{curve "cumulative"}
+    {projectileDamage 12}
+	{projectileDamageThreshold 1}
+	{AimingTolerance 3}
+	{Automatic}
+
+	{aimtype curved}
+
+	{spreading 1
+		{SpreadPower	1}
+	}
+	{recoveryTime 0}
+	{reloadSound "nagan"}
+	{rechargeTime 25}
+ 	("speed" s(75))
+	("accuracy_flaer")
+}

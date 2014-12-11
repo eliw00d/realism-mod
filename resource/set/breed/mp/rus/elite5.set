@@ -1,0 +1,42 @@
+{breed
+	{skin "rus-smgunner_w"}
+	{portrait "rus_elite2"}
+	{nationality rus}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head "fieldcap1_rus"}
+	}
+	{perks
+		{"health" "275%"
+		}
+		{"power" "175%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory            
+		{item "mosin" filled}	
+		{item "ptrd" filled}	
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "grenade f1" 2}
+		{item "ammo ptr" 25}
+		{in_hands 0}
+	}
+}

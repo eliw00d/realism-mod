@@ -1,0 +1,10 @@
+{from "pattern gun"		; "pdr25",  "bishop"
+    {filling "bullet89 fg" 6}
+	{fireSound "gun/85to100_cal/OQF_25pdr"}
+	{reloadSound "tankgun_r03"}
+	("range_medium_howitzer")
+	
+	("range" r(80))
+	("caliber_large")
+}
+

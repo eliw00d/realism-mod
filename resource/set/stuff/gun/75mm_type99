@@ -1,0 +1,10 @@
+{from "pattern gun"		; "ho-i"
+	{filling "bullet75 fg"}
+	{fireSound "gun/75mm_type99"}
+	{reloadSound "gun_r03"}
+	("range_light_howitzer")
+
+	("range" r(16)) ;64
+	("caliber_medium")
+}
+

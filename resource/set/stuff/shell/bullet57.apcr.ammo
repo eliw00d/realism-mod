@@ -1,0 +1,9 @@
+{from "pattern apcr"
+	{tag "size_minimum" "shell_small" "pierce"}
+	{inventory
+		{size 4 1}
+	}
+	{mass 7}
+	("apcr" args 0.5)
+	{entity "shell_apcr_57"}
+}

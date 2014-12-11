@@ -1,0 +1,29 @@
+{from "pattern gun"		; "ship"
+	{filling "bullet120" 2}
+	{fireSound "gun/howitzer/203mm"}
+	("range_heavy_howitzer")
+	{spreading 
+			{radiusTable {0 0} {50 4} {110 6}}
+	}
+	{bullet_view "howitzer_shell"
+		{tail "shell_tail" "root"}
+	}               
+	{range 300 450}
+	{spreading 10}
+	{RecoveryTime 2}
+	{RechargeTime 10}
+	{Automatic}
+	("speed" s(550))
+	("caliber_maximum")
+	{gravity 4}
+	{burst
+		{min 2}
+		{short 2.5 1}
+		{long 7 2}
+	}	
+    {RelaxationTime 0}
+	{projectileDamage 10000}	
+}
+
+
+

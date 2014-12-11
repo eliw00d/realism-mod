@@ -1,0 +1,15 @@
+{from "pattern gun"    ; "jagtiger"
+	{filling "bullet128"}
+	{fireSound "gun/howitzer/128mm_pak44"}
+	{reloadSound "tankgun_r04"}
+	{rechargeTime 26}
+	("range_maximum")	
+
+	("range" r(48))
+	("speed" s(845))
+	("caliber_maximum")
+	{projectileDamage 267}
+	("damage" a(267) b(262) c(253) d(245) e(237))
+	
+	("accuracy_maximum")
+}

@@ -1,0 +1,41 @@
+{breed
+	{skin "us_ranger_hp"}
+	{portrait "usa_soldier3"}
+	{nationality usa}
+	{icon "radioman"}
+	{icon_priority 5}
+	{armors
+		{head "radioman_hat"}
+	}
+	{perks
+		{"health" "300%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "thompson" filled}
+		{item "flaergun" filled}
+		{item "ammo pistol" 200}
+		{item "ammo flaer" 50}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

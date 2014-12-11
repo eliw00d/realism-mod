@@ -1,0 +1,101 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_large"}
+	{placer	{place "gunner" {visor "main"} {UseVision 0}}}	
+
+	("armor_medium")
+
+	{volume "turret1"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "turret2"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "turret3"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "turret4"
+		{tags "body"}
+		{component "body"}
+	}
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+	("crew_wheeled_gun")
+	{boarder
+		{anm "gunner"
+			{forward	{end "pose_pdr25_gunlayer" 10}}
+		}
+		{anm "commander"
+			{forward	{end "pose_pdr25_charger" 10}}
+		}
+		{anm "driver1"
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver2"
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "seat1"
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat2"
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+				{item "bullet89 fg" 60}
+				{item "sandbag_kit2"}
+		}
+	}
+	{Weaponry
+
+		{place "gun"
+			{weapon "88mm_oqfmk2" filling "ammo bullet89 fg" 6}
+			{StationaryFiring}  
+			("abm_field_gun")
+		}
+	}
+	{mass 1800}
+	{Extension "pdr25.mdl"}
+	(include "/properties/selection/cannon.inc"  scale(0.7))
+	{bone "turret"
+	      {limits}
+	}
+
+	{extender "cannon"
+		{animation
+			{move	"cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
+			{aim	"Cannon_pdr25_gunlayer" ""}
+			{fire	"Cannon_pdr25_gunlayer_fire-alert" "cannon_pdr25_charger_fire"}
+			{reload	"" "Cannon_pdr25_charger"}
+		}
+		{move {obstacle "close"}}
+		{attack {obstacle "open"}}
+		{rotate_bone "turret"}
+	}
+
+	{Chassis "track"
+		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("loco_big")
+	}
+	{bone "turret"
+		{speed 0.004}
+	}
+	{bone "gun_rot"
+		{limits -10 50}
+		{speed 0.004}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)					
+}

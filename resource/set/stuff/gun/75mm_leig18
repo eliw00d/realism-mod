@@ -1,0 +1,14 @@
+{from "pattern gun"     ; "leIG 18"
+	{filling "bullet75"}
+	{fireSound "gun/50to76_cal/75mm_pak40"}
+	{reloadSound "gun_r03"}
+	{rechargeTime 5}
+	("range_medium")	
+	
+	("range" r(16)) ;48
+	("speed" s(300))
+	("caliber_medium")	
+	;{projectileDamage 54}
+	;("damage" a(54) b(53) c(50) d(48) e(46))
+}
+

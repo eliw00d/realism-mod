@@ -1,0 +1,13 @@
+(include "\set\small.firearms.accuracy")
+
+(define "range"
+	{range (* 3.75 %r) (* 3.75 %r)}
+)
+
+(define "speed"   
+	{speed (* 0.5 %s)}  
+)
+
+(define "recoveryTime"   
+	{recoveryTime (/ 60 %r)}
+)

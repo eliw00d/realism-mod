@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "opel_blitz"}
+	{blend none}
+}

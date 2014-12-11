@@ -1,0 +1,297 @@
+{curve "gun_std"}
+
+
+(define "range"
+	{range (* 3.75 %r) (* 3.75 %r)}
+)
+
+
+(define "speed"   
+	{speed (* 1.0 %s)}  
+)
+
+
+(define "recoveryTime"   
+	{recoveryTime (/ 60 %r)}
+)
+
+
+(define "damage"                                                                                 
+	{projectileDamageTable {100 %a} {250 %b} {500 %c} {750 %d} {1000 %e} {1250 (* %e 0)}}
+	; 100m - 250m - 500m - 750m - 1000m
+)
+
+
+(define "accuracy_curve_1"
+	{spreading 
+		{radiusTable {0 0} {50 (* 0.50 %r1)} {90 (* 1.50 %r1)} {120 (* 2.00 %r1)} {150 (* 2.50 %r1)} {250 (* 3.00 %r1)}}
+	}
+	{parameters "apcr"
+		{spreading
+			{radiusTable {0 0} {50 (* 0.75 %r1)} {90 (* 1.75 %r1)} {120 (* 2.25 %r1)} {150 (* 2.75 %r1)} {250 (* 3.25 %r1)}}
+		}
+	}
+	{parameters "fg"
+		{spreading
+			{radiusTable {0 0} {50 (* 1.00 %r1)} {90 (* 2.00 %r1)} {120 (* 2.50 %r1)} {150 (* 3.00 %r1)} {250 (* 3.50 %r1)}}
+		}
+	}	
+)
+
+(define "accuracy_curve_2" 
+	{spreading 
+		{radiusTable {0 0} {50 (* 0.50 %r1)} {90 (* 1.00 %r1)} {120 (* 2.00 %r1)} {150 (* 2.50 %r1)} {250 (* 3.50 %r1)}}
+	}		
+	{parameters "fg"
+		{spreading
+			{radiusTable {0 0} {50 (* 1.00 %r1)} {90 (* 2.00 %r1)} {120 (* 3.00 %r1)} {150 (* 3.50 %r1)} {250 (* 4.50 %r1)}}
+		}
+	}
+)
+
+(define "accuracy_curve_3"  
+	{spreading 
+		{radiusTable {0 0} {50 (* 1.00 %r1)} {100 (* 1.50 %r1)} {150 (* 2.00 %r1)} {300 (* 2.50 %r1)}}	
+	}
+)
+
+
+(define "accuracy_zenite_low"
+	("accuracy_curve_1" r1(1.00))
+)
+(define "accuracy_zenite_medium"
+	("accuracy_curve_1" r1(0.90))
+)
+(define "accuracy_zenite_high"
+	("accuracy_curve_1" r1(0.80))
+)
+(define "accuracy_minimum" 
+	("accuracy_curve_1" r1(0.80))
+)	
+(define "accuracy_low" 
+	("accuracy_curve_1" r1(0.75))
+)
+(define "accuracy_medium" 
+	("accuracy_curve_1" r1(0.70))
+)
+(define "accuracy_high" 
+	("accuracy_curve_1" r1(0.65))
+)
+(define "accuracy_maximum" 
+	("accuracy_curve_1" r1(0.60))
+)
+(define "accuracy_lighthowitzer"
+	("accuracy_curve_1" r1(1.50))
+)
+(define "accuracy_grazinghowitzer" 
+	("accuracy_curve_2" r1(1.00))
+)
+(define "accuracy_howitzer" 
+	("accuracy_curve_3" r1(8.00))
+)
+
+
+(define "caliber_zenite"
+	{projectileDamageThreshold 1.10}
+)
+(define "caliber_minimum"
+	{projectileDamageThreshold 1.10}
+)
+(define "caliber_medium"
+	{projectileDamageThreshold 1.15}
+)
+(define "caliber_large"
+	{projectileDamageThreshold 1.20}
+)
+(define "caliber_maximum"
+	{projectileDamageThreshold 1.25}
+)
+(define "caliber_howitzer"
+	{projectileDamageThreshold 1.30}
+)
+
+
+(define "range_autocannon"
+	("accuracy_zenite_high")
+	{spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 90 85 80 75}
+	}
+	{SpreadTolerance 0.6}
+		
+    {RelaxationTime 0.2}
+	{gravity 1.5}
+)
+
+(define "range_zenite"
+	("accuracy_zenite_low")
+	{spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 90 85 80 75}
+	}
+	{SpreadTolerance 0.6}
+	
+	{cursor "zenite_on"}
+	{cursorReloading "zenite_reload"}
+	
+    {RelaxationTime 0.2}
+	{gravity 1.5}
+)
+
+(define "range_zenite_long"
+	("accuracy_zenite_medium")
+	{spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 90 85 80 75}
+	}
+	{SpreadTolerance 0.6}
+	
+	{cursor "zenite_on"}
+	{cursorReloading "zenite_reload"}
+	
+    {RelaxationTime 0.2}
+	{gravity 1.5}
+)
+
+(define "range_minimum"
+	{spreading 1                
+		{SpreadPower	1}
+	}	
+	{SpreadTolerance 0.4}
+	{bullet_view "howitzer_shell"}
+	{ZeroingAccuracy 0.8 0.6}
+    {RelaxationTime 0.4}
+	{gravity 1.5}
+)
+
+(define "range_short"
+	{curve "gun_medium"}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	{SpreadTolerance 0.4}	
+	{bullet_view "howitzer_shell"}
+	{ZeroingAccuracy 0.8 0.6}
+    {RelaxationTime 0.4}
+	{gravity 1.5}
+)
+ 
+(define "range_medium"
+	{curve "gun_heavy"}
+	{spreading 1 
+		{SpreadPower	1}
+	}
+	{SpreadTolerance 0.4}
+	{bullet_view "howitzer_shell"}
+	{ZeroingAccuracy 0.8 0.6}
+    {RelaxationTime 0.4}
+	{gravity 1.5}
+)
+
+(define "range_long"
+	{curve "gun_heavy"}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	{SpreadTolerance 0.4}
+	{bullet_view "howitzer_shell"}
+	{ZeroingAccuracy 0.8 0.6}
+    {RelaxationTime 0.4}
+	{gravity 1.5}
+)
+
+(define "range_maximum"
+	{curve "gun_heavy"}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	{SpreadTolerance 0.4}
+	{bullet_view "howitzer_shell"}
+	{ZeroingAccuracy 0.8 0.6}
+    {RelaxationTime 0.4}
+	{gravity 1.5}
+)
+
+(define "range_light_howitzer"
+	{curve "gun_medium"}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	("accuracy_lighthowitzer")
+
+	{rechargeTime 6}
+	
+	{bullet_view "howitzer_shell"}
+	
+	{SpreadTolerance 0.7}		
+	
+	{ZeroingAccuracy 0.85 0.7}
+    {RelaxationTime 0.4}
+	{speed 150}
+	{gravity 7.5}
+)
+
+(define "range_grazing_howitzer"
+	{curve "gun_medium"}
+	{spreading 1
+		{SpreadPower	1}
+	}
+	("accuracy_grazinghowitzer")
+	("caliber_howitzer")
+
+	{rechargeTime 25}
+
+	{bullet_view "howitzer_shell"}
+	
+	{SpreadTolerance 0.7}	
+	{DisableRicochet}
+
+	{ZeroingAccuracy 0.85 0.7}
+    {RelaxationTime 1}
+	{speed 200}
+	{gravity 3.5}
+)
+
+(define "range_medium_howitzer"
+	{spreading 1
+		{SpreadPower	1}
+		{SpreadYadjust	0.5}
+	}
+	("accuracy_howitzer")
+	("caliber_howitzer")
+
+	{bullet_view "howitzer_shell"}
+	
+	
+	{DisableRicochet}
+	
+	{ZeroingAccuracy 0.95 0.90}
+	{RelaxationTime 2}	
+	{speed 450}
+	{gravity 5}
+	
+	{aimtype adaptive}
+	{traceFreq 0} 	
+)
+
+(define "range_heavy_howitzer"
+	{spreading 1
+		{SpreadPower	1}
+		{SpreadYadjust	0.5}
+	}
+	("accuracy_howitzer")
+	("caliber_howitzer")
+
+	{bullet_view "howitzer_shell"}
+	
+	
+	{DisableRicochet}
+	
+	{ZeroingAccuracy 0.95 0.90}
+	{RelaxationTime 2}	
+	{speed 450}
+	{gravity 5}
+	
+	{aimtype adaptive}
+	{traceFreq 0}	
+)

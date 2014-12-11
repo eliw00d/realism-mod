@@ -1,0 +1,74 @@
+;----- Commonwealth -----
+
+
+;°°°Infantry only°°°
+
+{"bedford_inf"      ("vs" c(60) t(inf_only) 	s(eng) n(2) g(a1) sc(0)  b(v1) cw(0) cp(0)) {level 1} {cost 0} {fore 1.0}}
+
+
+;°°°Button 1°°°
+
+{"willysmb_eng"     ("vs" c(60) t(all inf_only) s(eng) n(3) g(b1) sc(5.50)  b(v1) cw(0) cp(0)) {level 2} {cost 110} {fore 1.0}}
+;{"dodgewc55"        ("vs" c(60) t(all) 			s(eng) n(4) g(b2) sc(11.00) b(v1) cw(0) cp(0)) {level 4} {cost 220} {fore 1.0}}
+{"m3_eng"           ("vs" c(300) t(all) 		s(eng) n(2) g(b3) sc(7.50)  b(v1) cw(0) cp(0)) {level 6} {cost 150} {fore 0.5}}
+
+{"bedford"	    	("vs" c(60) t(all) 			s(eng) n(2) g(b4) sc(2.50)  b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}
+{"bedford_art"      ("vs" c(60) t(all) 			s(eng) n(2) g(b5) sc(7.50)  b(v1) cw(0) cp(0)) {level 1} {cost 150} {fore 1.0}}
+{"bedford_eng"      ("vs" c(60) t(all) 			s(eng) n(2) g(b6) sc(12.50)  b(v1) cw(0) cp(0)) {level 8} {cost 250} {fore 0.0}}
+
+
+;°°°Button 2°°°
+
+{"vickers_stan"     ("vs" c(300) t(all) 		s(eng) n(2) g(c1) sc(5.00)  b(v2) cw(2) cp(5)) {level 1} {cost 100} {fore 0.5}}
+{"oerlikon"         ("vs" c(300) t(all) 		s(eng) n(1) g(c2) sc(8.50) b(v2) cw(2) cp(5)) {level 3} {cost 170} {fore 0.5}}
+{"ml3"		    	("vs" c(0) t(all) 			s(eng) n(2) g(c3) sc(17.50) b(v2) cw(2) cp(5)) {level 5} {cost 350} {fore 1.0}}
+
+{"qf2"       	    ("vs" c(0) t(all) 			s(eng) n(2) g(c4) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 135} {fore 1.0}}
+{"qf6"              ("vs" c(0) t(all) 			s(eng) n(2) g(c5) sc(11.25) b(v2) cw(2) cp(10)) {level 1} {cost 225} {fore 1.0}}
+{"qf17"             ("vs" c(0) t(all medium) 	s(eng) n(2) g(c6) sc(26.25) b(v2) cw(2) cp(15)) {level 1} {cost 525} {fore 1.0}}
+
+("how" side(eng) name(how_aa) c(0) c1(universal_carrier) c2(vickers) 	t(all medium heavyaa) g(c7) b(v2) level(8) cost(750) f(1.0))
+("how" side(eng) name(how_b) c(0) c1(universal_carrier) c2(pdr25) 		t(all artillery) g(c8) b(v2) level(11) cost(700) f(1.0))
+;("how" side(eng) name(how_a) c(0) c1(universal_carrier) c2(bl6)   		t(all artillery heavy) g(c9) b(v2) level(14) cost(900) f(1.0))
+
+{"m7_eng"           ("v" c(0) t(all artillery heavy) 	s(eng) n1(3) n2(1) g(c11) sc(42.50) b(v2) cw(0) cp(15)) {level 20} {cost 850} {fore 1.0}}
+("how" side(eng) name(land_mattress) c(0) c1(universal_carrier) c2(land_mattress)   t(all artillery rocket) g(c12) b(v2) level(23) cost(1300) f(1.0))
+
+
+;°°°Button 3°°°
+
+{"mk7"    	    	("v" c(150) t(all) 				s(eng) n1(2) n2(1) g(d1) sc(11.50) b(v3) cw(0) cp(5)) {level 1} {cost 230} {fore 0.6}}
+{"mk2daimler"       ("v" c(150) t(all) 				s(eng) n1(2) n2(1) g(d2) sc(12.00) b(v3) cw(0) cp(5)) {level 1} {cost 240} {fore 0.4}}
+
+{"crusaderaa2"      ("v" c(150) t(all) 				s(eng) n1(2) n2(1) g(d4) sc(15.00) b(v3) cw(0) cp(5)) {level 10} {cost 300} {fore 0}}
+{"crusaderaa1"      ("v" c(150) t(all) 				s(eng) n1(2) n2(1) g(d4) sc(21.25) b(v3) cw(0) cp(5)) {level 15} {cost 425} {fore 0}}
+
+
+;°°°Button 4°°°
+
+{"m4a4"             ("v" c(0) t(all) 		s(eng) n1(4) n2(1) g(e4) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 440} {fore 1.0}}	
+{"m4a4_firefly"     ("v" c(0) t(all medium) 		s(eng) n1(4) n2(1) g(e7) sc(40.00) b(v4) cw(0) cp(15)) {level 1} {cost 800} {fore 1.0}}
+
+{"cromwell_mk_vii"  ("v" c(0) t(all medium) 		s(eng) n1(3) n2(1) g(e2) sc(17.50) b(v4) cw(0) cp(15)) {level 1} {cost 350} {fore 1.0}}
+{"cometa34"         ("v" c(0) t(all) 		s(eng) n1(3) n2(1) g(e6) sc(37.50) b(v4) cw(0) cp(15)) {level 1} {cost 750} {fore 1.0}}
+
+{"challenger_a30"         ("v" c(0) t(all) 		s(eng) n1(3) n2(1) g(e6) sc(37.50) b(v4) cw(0) cp(15)) {level 1} {cost 750} {fore 1.0}}
+
+{"mk4"              ("v" c(0) t(all) 	s(eng) n1(3) n2(1) g(e5) sc(32.50) b(v4) cw(0) cp(15)) {level 1} {cost 650} {fore 1.0}} 
+{"churchill_mk_vii" ("v" c(0) t(all heavy) 			s(eng) n1(3) n2(1) g(e8) sc(45.00) b(v4) cw(0) cp(30)) {level 1} {cost 900} {fore 1.0}} 
+{"churchill_crocodile" ("v" c(0) t(all heavy) 			s(eng) n1(3) n2(1) g(e8) sc(45.00) b(v4) cw(0) cp(30)) {level 1} {cost 900} {fore 1.0}} 
+
+;°°°Button 5°°°
+
+{"cromwell_mk_vi"           ("v" c(0) t(all medium) 		s(eng) n1(3) n2(1) g(f1) sc(30.0) b(v5) cw(0) cp(10)) {level 1} {cost 600} {fore 1.0}} 	
+{"churchill_avre"           ("v" c(0) t(all medium) 		s(eng) n1(3) n2(1) g(f1) sc(30.0) b(v5) cw(0) cp(10)) {level 1} {cost 600} {fore 1.0}} 	
+
+{"archer"           ("v" c(0) t(all medium) 		s(eng) n1(3) n2(1) g(f1) sc(30.0) b(v5) cw(0) cp(10)) {level 1} {cost 600} {fore 1.0}} 	
+{"achilles"         ("v" c(0) t(all medium) 		s(eng) n1(4) n2(1) g(f2) sc(32.5) b(v5) cw(0) cp(15)) {level 10} {cost 650} {fore 1.0}}				
+
+
+
+
+;°°°Button Hero°°°
+
+;{"heronew3_eng"		("v1" c(600) c1(m4a4_tulip)		t(all hero) s(eng) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 15} {cost 5.0} {fore -0.5}}

@@ -1,0 +1,49 @@
+{weapon_bullet
+	{tag "weapon build_in gun"}
+	{inventory
+		{size 4 2}
+		{weight 1000}
+	}
+	{mass 1000}
+	{foresight "Foresight1"}
+	{range 3 5}
+	{spreading 1}
+	{rechargeTime 5}
+	{speed 75}
+    {AimingTolerance 2}
+    {RelaxationTime 0.5}
+	{projectileDamageThreshold 1
+	}
+	{cursor "cannon_on"}
+	{cursorReloading "cannon_reload"}
+	{parameters "fg"
+		{cursor "cannon_on_fg"}
+		{cursorReloading "cannon_reload_fg"}
+	}
+	{parameters "apcr"
+		{cursor "cannon_on_apcr"}
+		{cursorReloading "cannon_reload_apcr"}
+	}
+	{parameters "sm"
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}
+	
+	{RicochetEnergyDamping 	; penetration energy damping after ricochet (angle - damping)	
+		{0 	1}	
+		{20	1}
+		{30	0.8}
+		{45 0.4}
+		{60 0}	
+	}
+
+	{OvermatchDamping
+		{0 1}
+		{30 1.1}
+		{55	1.15}
+		{60	1.45}
+		{70	4}		
+		{90	6}		
+	}
+	
+}

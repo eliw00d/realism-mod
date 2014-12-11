@@ -1,0 +1,9 @@
+{from "pattern smg"
+	{filling "ammo pistol" 32}
+	{entity "mp40"}
+	{fireSound	"smg/mp40_burst/"}
+
+	("recoveryTime" r(500))
+	("burst_short")
+ 	("speed" s(380))
+}

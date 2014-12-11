@@ -1,0 +1,16 @@
+{from "pattern gun"		; "stuh42"
+	{filling "bullet105"}
+	{fireSound "gun/howitzer/105mm_m2a1"}
+	{rechargeTime 15}
+	("range_grazing_howitzer")
+
+	("range" r(32))
+	("speed" s(495))
+	("caliber_maximum")
+	{projectileDamage 115}
+	("damage" a(115) b(115) c(115) d(115) e(115))
+	
+	("accuracy_minimum")
+}
+
+

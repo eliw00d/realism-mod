@@ -1,0 +1,46 @@
+{breed
+	{skin "rus-specnaz_hp"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "sniper2"}
+	{icon_priority 5}
+	{armors
+		{head "winterhat"}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_sniper"
+		}
+		{"speed" 1.0
+		}
+		{"stealth"
+		}
+		{"telescope"
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "mosin_s" filled}
+		{item "ammo rifle" 100}
+		{item "bandage" 5}
+		{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_rus"}
+		{in_hands 0}
+	}
+}

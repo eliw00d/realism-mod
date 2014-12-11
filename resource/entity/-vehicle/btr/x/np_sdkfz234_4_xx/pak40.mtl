@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "pak40_xx"}
+	{blend test}
+}

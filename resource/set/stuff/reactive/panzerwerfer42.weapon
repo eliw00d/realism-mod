@@ -1,0 +1,14 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo panzerwerfer42" 10}
+	{fireSound "reactive/nebelwerfer_burst"}
+	("heavy_artillery")
+
+	("range" r(64))
+	("speed" s(340))
+	{recoveryTime 1.7}
+	("heavy_artillery")		
+	{gravity 4.2}
+	{burst {min 10} {noaiming}}
+	{rechargeTime 360}
+}

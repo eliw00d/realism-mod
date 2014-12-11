@@ -1,0 +1,11 @@
+{from "pattern rpg_ammo"
+	{entity "piatrocket_ammo"}
+	{tag "pierce"}
+	{view "piatrocket_ammo"
+		{tail "pfaust_tail" "tail"}
+	}
+	{damage blastwave
+		{energy 1}
+		{area 2 6}
+	}
+}

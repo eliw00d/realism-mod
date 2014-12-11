@@ -1,0 +1,19 @@
+{from "pattern gun" 	; "m18_hellcat"
+	{filling "bullet76"}
+	{fireSound "gun/50to76_cal/76mm_mk4"}
+	{reloadSound "gun_r05"}
+	{rechargeTime 6}
+	("range_medium")
+	
+	("range" r(32))
+	("speed" s(792))
+	("caliber_medium")
+	{projectileDamage 124}
+	("damage" a(125) b(121) c(116) d(111) e(106))
+	{parameters "apcr"
+        ("damage" a(239) b(227) c(208) d(191) e(175))
+	}
+	
+	("accuracy_low")
+}
+

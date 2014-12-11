@@ -1,0 +1,16 @@
+{weapon_bullet
+	{tag "mrl gun"}
+	{filling "ammo 20cm_rocket" 1}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/katyusha_burst"}
+	{foresight "foresight"}
+	("heavy_artillery")  
+
+	{spreading
+		{SpreadRadius 8.5}
+	}
+	{AimingTolerance 0.1}
+	{gravity 1.5}
+	{rechargeTime 75}
+	{range 170 180}
+}

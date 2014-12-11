@@ -1,0 +1,15 @@
+{from "pattern gun"		; "flak37"
+	{filling "bullet88"}
+	{fireSound "gun/85to100_cal/88mm_flak41"}
+	{reloadSound "gun_r04"}
+	{rechargeTime 5}
+	("range_long")
+	
+	("range" r(40))
+	("speed" s(780))
+	("caliber_large")
+	{projectileDamage 149}	
+	("damage" a(149) b(145) c(139) d(133) e(127))
+	
+	("accuracy_high")
+}

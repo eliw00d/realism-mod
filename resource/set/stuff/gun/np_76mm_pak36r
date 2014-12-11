@@ -1,0 +1,18 @@
+{from "pattern gun"      ; "pak36(r)"
+	{filling "bullet76"}
+	{fireSound "gun/50to76_cal/76mm_zis3"}
+	{reloadSound "gun_r00"}
+	{rechargeTime 6.5}
+	("range_short")
+
+	("range" r(16))
+	("speed" s(710))
+	("caliber_medium")
+	{projectileDamage 133}
+	("damage" a(133) b(128) c(121) d(115) e(108))
+	{parameters "apcr"
+        ("damage" a(188) b(179) c(165) d(151) e(139))
+	}
+	
+    ("accuracy_medium")
+}

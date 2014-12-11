@@ -1,0 +1,42 @@
+{breed
+	{skin "rus_sailor_hp"}
+	{portrait "rus_elite1"}
+	{nationality rus}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head "cap2_rus"}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "150%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{inventory
+		{item "weapon bazooka" filled}
+		{item "ppsh" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 3}
+		{item "grenade rpg40" 1}
+		{item "ammo bazooka" 7}
+		{in_hands 0}
+	}
+}

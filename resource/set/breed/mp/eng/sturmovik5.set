@@ -1,0 +1,42 @@
+{breed
+	{skin "eng-mgun"}
+	{portrait "eng_soldier5"}
+	{nationality eng}
+	{icon "stormtrooper5"}
+	{icon_priority 4}
+	{armors
+		{head beret_sas}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "weapon piatrocket" filled}
+		{item "sten" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 5}
+		{item "grenade n73at" 1}
+		{item "ammo piatrocket" 5}
+		{in_hands 0}
+	}
+}

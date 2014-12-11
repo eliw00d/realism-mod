@@ -1,0 +1,42 @@
+{breed
+	{skin "eng_tankman_afr"}
+	{portrait "eng_elite3"}
+	{nationality eng}
+	{icon "sapper3"}
+	{icon_priority 3}
+	{armors
+		{head "helmet1_eng"}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+
+		{"pistol" lvl_2
+		}	
+		{"smg" lvl_2
+		}	
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "m50reising" filled}
+		{item "ammo pistol" 200}
+		{item "mine antipersonnel" 15}
+		{item "barbwire_kit" 1}
+		{item "dynamite" 1}
+		{item "repair_kit" 1}
+		{in_hands 0}
+	}
+}

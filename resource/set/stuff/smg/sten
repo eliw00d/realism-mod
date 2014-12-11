@@ -1,0 +1,11 @@
+{from "pattern smg"
+	{filling "ammo pistol" 32}
+	{entity "sten_mkiii"}
+	{fireSound	"smg/sten_burst/"}
+	{reloadSound "sten"}
+
+	{spreading 1.1}
+	("recoveryTime" r(550))
+	("burst_short")
+ 	("speed" s(365))
+}

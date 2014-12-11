@@ -1,0 +1,6 @@
+{from "browning"
+	{filling "ammo hmgun" 400}
+	
+	{rechargeTime 20}	
+	("recoveryTime" r(2000))
+}

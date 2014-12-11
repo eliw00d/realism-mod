@@ -1,0 +1,42 @@
+{breed
+	{skin "eng-com"}
+	{portrait "eng_soldier3"}
+	{nationality eng}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head cap_eng}
+	}
+	{perks
+		{"health" "200%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "em3_mark1" filled}
+		{item "ammo rifle_grenade" 25}
+		{item "bandage" 3}
+		{item "grenade mk1" 4}
+		{item "grenade n73at" 1}
+		{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

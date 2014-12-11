@@ -1,0 +1,42 @@
+{breed
+	{skin "ger_ss_hp3"}
+	{portrait "ger_soldier3"}
+	{nationality ger}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head "fieldcap1_ger"}
+	}
+	{perks
+		{"health" "200%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory      
+		{item "sg44" filled}      
+		{item "ammo pistol" 500}
+		{item "bandage" 3}
+		{item "grenade m24" 4}
+		{item "grenade m24x5" 1}
+		{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

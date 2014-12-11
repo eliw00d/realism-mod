@@ -1,0 +1,9 @@
+{from "pattern fg"
+	{tag "big" "size_small"}
+	{inventory
+		{size 5 1}
+	}
+	("fg" args 4.5)
+	{mass 15}
+	{entity "shell_fg_85"}
+}

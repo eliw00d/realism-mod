@@ -1,0 +1,11 @@
+{from "pattern smg"
+	{filling "ammo pistol" 32}
+	{entity "m3a"}
+	{fireSound	"smg/m3a_burst/"}
+	{reloadSound "mp44"}
+	
+	{spreading 0.9}
+	("recoveryTime" r(450))
+	("burst_short")
+ 	("speed" s(280))
+}

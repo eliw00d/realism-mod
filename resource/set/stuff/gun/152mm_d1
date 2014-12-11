@@ -1,0 +1,10 @@
+{from "pattern gun"     ; "d1"
+	{filling "bullet152"}
+	{fireSound "gun/howitzer/152mm_ml20"}
+	{reloadSound "gun_r04"}
+	{rechargeTime 20}
+	("range_heavy_howitzer")
+	
+	("range" r(80))
+	;("speed" s(508))
+}

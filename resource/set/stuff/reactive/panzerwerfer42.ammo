@@ -1,0 +1,22 @@
+{bullet
+	{tag "big shell fg bomb nebel"}
+	{inventory
+		{size 5 1}
+		{weight 100}
+	}	
+	{entity "panzerwerfer_ammo"}
+	{mass 36.05}
+	{view "panzerwerfer_ammo"
+		{tail "rocket_smoke" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	{damage blastwave
+		{energy 12}
+		{area 1 2}
+	}		
+	{damage add blastwave
+		{energy 1.5}
+		{area 8 16}
+	}
+}

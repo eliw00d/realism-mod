@@ -1,0 +1,40 @@
+{breed
+	{skin "ger-volkssturm"}
+	{portrait "ger_soldier1"}
+	{nationality ger}
+	{icon "home_guard2"}
+	{icon_priority 0}
+	{armors
+		{head "fieldcap_ger"}
+	}
+	{perks
+		{"health" "100%"
+		}
+		{"power" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.8
+		}
+		
+		{"pistol" lvl_1
+		}
+		{"smg" lvl_1
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+	}
+	{inventory
+		{item "mp3008" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 2}
+		{item "grenade m24" 2}
+		{in_hands 0}
+	}
+}

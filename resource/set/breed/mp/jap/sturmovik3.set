@@ -1,0 +1,44 @@
+{breed
+	{skin "jap_sturmovik"}
+	{portrait "jap_soldier5"}
+	{nationality jap}
+	{icon "stormtrooper3"}
+	{icon_priority 4}
+	{armors
+		{head helmet2_jap}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"power" "200%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "mp28_50" filled}
+		{item "ammo pistol" 500}
+		{item "bandage" 5}
+		{item "grenade type97" 2}
+		{item "smoke grenade" 2}
+		{item "dynamite" 1}
+		{item "weapon weapon type_4at" filled}
+		{item "ammo type_4" 5}
+		{in_hands 0}
+	}
+}

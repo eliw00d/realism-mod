@@ -1,0 +1,146 @@
+{game_entity	
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{collider "tank.heavy"}
+	{props "heavy" "-turret" "sturmtiger" "vision_vehicle_maximum"}	
+	
+	{extender "enumerator"
+		{digit_folder "ger2"}
+	}
+	
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 80}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 80}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 80}
+	}
+	{Volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 80}
+	}
+	{Volume "engine"
+		{thickness 80}
+	}
+	{Volume "gun1"
+		{tags "gun"}
+		{component "gun"}
+	}
+	{Volume "gun2"
+		{tags "mantlet"}
+		{component "mantlet"}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 110}
+	}
+	
+	("armor_spa_heavy" armor(150 82 82 40) armor2(150 82 82 40) armor3(150 62 82 62) armor4(62 62 82 70))
+	("armor_mantlet" t(110))
+	("armor_engine"  t(40 82 82 40))
+	
+
+	("shield" args 8)
+	{extender "shield"
+		{on}
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldl6" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+	{component "shieldr6" {tags "shield"}}
+
+	("crew_5_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo sturmtiger" 13} ; 14
+			{item "ammo mgun" 600}
+		}
+		
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "weapon 380mm_rw61" filled}
+			{Barrels 1}
+			("abm_low")
+		}
+		{place "mgun"
+			{type "mgun_hull"}
+			{weapon "mg34" filled}
+			{foresight "foresight3"} 
+			{gunner "driver2"}
+			{charger "driver2"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+	
+	{mass 65000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(1.2))
+		{Locomotion ("locomotion")
+			{MaxSpeed	40}
+			{maxSpeedAtMaxTurn 8}
+			{StartTime	18}
+			{TurnTime	14}
+			{TurnStart  2} 
+    		{BrakeTime  2}
+     		{StopTime   3} 
+    		{TurnRadius 7} 
+    		{TurnStop   1}
+			{Gears 0.1 0.2 0.4 1} 
+    		{RearGears 0.1 0.35}
+		}
+		{FuelBag
+			{volume 540 }
+			{rate	450 }
+			{remain 540 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  10}
+        	{Slow  12}
+    	}
+	}
+	{Extension "sturmtiger.mdl"}
+	
+	{bone "gun_rot"
+		{limits 0 60}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

@@ -1,0 +1,28 @@
+{from "pattern gun"		; "pz2l", "sdkfz222"
+	{filling "bullet20 zenite" 10}	
+	{fireSound "gun/zenite/20mm_burst/"}
+	{reloadSound "flak38"}
+	{rechargeTime 7.8}
+	("range_zenite")
+	
+	("range" r(16))
+	("speed" s(760))
+	("caliber_zenite")
+	("recoveryTime" r(450))
+	{projectileDamage 45}
+	("damage" a(45) b(40) c(33) d(28) e(23))
+	{parameters "apcr"
+        ("damage" a(63) b(45) c(26)	d(15) e(8))
+	}
+	
+	{AimingTolerance 10}
+	{Automatic}
+	{burst
+		{min 1}
+		{short 2.5 1}
+		{long 7 2}
+	}	
+	{RelaxationTime 0}
+	
+	("accuracy_zenite_medium")
+}

@@ -1,0 +1,40 @@
+{from "pattern bullet"
+	{tag "weapon rifle bullet to_hand"}
+	{filling "ammo rifle" 5}
+	{inventory
+		{size 4 2}
+		{link_bone "gun_back"}
+		{weight 100}
+	}
+	{entity "mosin"}
+	{cursor "carbine_on"}
+	{cursorReloading "carbine_reload"}
+	{burst
+		{short 1}
+		{Long 1}
+	}	
+	{mass 4.5}
+	{reloadSound "rifle_bolt_five"}
+
+	{recoveryTime 2.4}
+	{rechargeTime 3}
+	{speed 380}
+
+	{ProjectileDamage 5}
+	{ProjectileDamageClip 5}
+	{projectileDamageTable {50 5} {100 0}}
+	{projectileDamageThreshold 1.5}
+	{calibre 9.72}
+	
+	{spreading 1}
+	{healthDamage 200}
+	
+	{range 60 60}
+	{aimingTolerance 1}
+	
+	{spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 98 95 92}
+	}	
+	("accuracy_rifle")
+}

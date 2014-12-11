@@ -1,0 +1,48 @@
+{breed
+	{skin "us_sniper"}
+	{portrait "usa_elite4"}
+	{nationality usa}
+	{icon "scout"}
+	{icon_priority 5}
+	{armors
+		{head "usmc-cap1"}
+	}
+	{perks
+		{"health" "500%"
+		}
+		{"power" "300%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"stealth"
+		}
+		
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"melee" lvl_4
+		}
+	}
+	{inventory
+		{item "hdm" filled}
+		{item "weapon bazooka" filled}
+		{item "ammo pistol" 200}
+		{item "ammo bazooka" 5}
+		{item "bandage" 5}
+		{item "grenade m61" 4}
+		{item "smoke grenade" 3}
+		{item "grenade molotov_coctail" 2}
+		{item "knife_union" 1}
+		{item "matchbox" 1}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,4 @@
+{material envmap
+	{diffuse "opel_glass"}
+	{blend blend}
+}

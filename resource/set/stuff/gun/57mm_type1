@@ -1,0 +1,16 @@
+{from "pattern gun"		; "chi-he"
+	{filling "bullet57"}
+	{fireSound "gun/47mm_type97"}
+	{reloadSound "gun_r02"}
+	{rechargeTime 4.5}
+	("range_short")
+	
+	("range" r(16))
+	("speed" s(900))
+	("caliber_minimum")
+	{projectileDamage 40}	
+	("damage" a(40) b(30) c(20) d(10) e(0))
+	
+	("accuracy_low")
+}
+
