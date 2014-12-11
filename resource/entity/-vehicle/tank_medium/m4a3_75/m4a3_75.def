@@ -30,7 +30,7 @@
 		{component "gun"}
 	}
 
-	("armor_medium" turret(76 51 25 25) body(64 38 38 19) body2(108 38 38 19))
+	("armor_medium" turret(76 51 51 25) body(64 38 38 19) body2(108 38 38 19))
 	("armor_engine"  t(40 38 38 19))		
 	("armor_mantlet" t(89))
 	("shield" args 10)
