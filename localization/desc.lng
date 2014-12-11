@@ -87,7 +87,25 @@
 		
 	}
 	{"weapon"
-		
+		; american
+		{"37mm_m3" "37mm M3 L/52"}
+		{"37mm_m6" "37mm M6 L/52"}
+		{"40mm_bofors" "40mm M1 L/60"}
+		{"57mm_m1" "57mm M1 L/50"}
+		{"75mm_m2" "75mm M2 L/15.9"}
+		{"75mm_m2a" "75mm M1A1 L/15.9"}
+		{"75mm_m3" "75mm M3 L/40"}
+		{"75mm_m6" "75mm M6 L/40"}
+		{"76mm_m1a2" "76mm M1A2 L/52"}
+		{"76mm_m5" "3\" M5 L/50"}
+		{"76mm_m7" "3\" M7 L/50"}
+		{"90mm_m3" "90mm M3 L/53"}
+		{"90mm_m15" "90mm T15E1 L/73"}
+		{"105mm_m2a1" "105mm M2A1 L/22"}
+		{"155mm_gpf" "155mm M1 L/23"}
+		{"155mm_m12" "155mm M1918 L/38.2"}
+	
+		; german
 		{"20mm_flak38" "2cm FlaK 38 L/65"}
 		{"20mm_flak38_x4" "2cm FlaK 38 L/65"}
 		{"20mm_kwk30" "2cm KwK 38 L/55"}
@@ -110,5 +128,24 @@
 		{"128mm_pak44" "12.8cm PaK 44 L/55"}
 		{"150mm_sfh18" "15cm sFH 18 L/29,5"}
 		{"380mm_rw61" "38cm RW 61 L/5,4"}
+		
+		; soviet
+		{"37mm_61-k" "37mm ZP-39 L/73.8"}
+		{"45mm_20k" "45mm PP-37 L/46"}
+		{"57mm_zis2" "57mm PP-41 L/69.3"}
+		{"76mm_f32" "76mm TP-40 L/31.5"}
+		{"76mm_f34" "76mm TP-40 L/42.5"}
+		{"76mm_obr1927" "76mm PP-27 L/16.4"}
+		{"76mm_zis3" "76mm DP-42 L/42.5"}
+		{"76mm_zis5" "76mm TP-41 L/42.5"}
+		{"85mm_d5s" "85mm SP-43 L/52"}
+		{"85mm_d5t" "85mm TP-43 L/52"}
+		{"85mm_zis53" "85mm TP-44 L/55"}
+		{"100mm_d10c" "100mm SP-44 L/54"}
+		{"122mm_a19s" "122mm SP-31/44 L/46"}
+		{"122mm_d25" "122mm TP-43 L/49"}
+		{"122mm_m30" "122mm G-38 L/23"}
+		{"122mm_m30s" "122mm SG-38 L/23"}
+		{"152mm_d1" "152mm G-43 L/24.6"}
 	}
 }

@@ -1,0 +1,161 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+
+	{collider "tank.heavy"}
+	{props "heavy" "turret_rotator" "vision_vehicle_high" "muzzle_medium"}
+	
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+	}
+	{Volume "body2"
+		{tags "body2"}
+		{component "body"}
+	}
+	{Volume "body3"
+		{tags "body3"}
+		{component "body"}
+	}
+	{Volume "turret1"
+		{tags "turret"}
+		{component "turret"}
+	}
+	{Volume "turret2"
+		{tags "turret"}
+		{component "turret"}
+	}
+	
+	{Volume "engine"
+		{tags "engine"}
+		{component "engine"}
+	}
+
+	("armor_heavy" turret(90 75 75 35) body(100 75 70 30) body2(40 75 70 30) body3(100 75 70 30))
+	("armor_engine"  t(40 75 60 40))
+	("armor_mantlet" t(120))
+	
+	("shield" args 25)
+	
+	{extender "shield"
+			(mod "mp"
+				{off}
+			)
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl10" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr10" {tags "shield"}}
+	
+	{extender "enumerator"}
+
+	("crew_4_human")
+
+	("gunner_visible")
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	("seat_human" place(seat5) bone(seat05) door(emit8)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit7)  animation(armor1))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet45 ap" 27}
+			{item "ammo bullet45 fg" 50}
+			{item "ammo bullet45 apcr" 5}
+			{item "ammo mgun" 1500}
+			{item "tank_balloon" filled}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "45mm_20k" filling "ammo bullet45 ap" 1}
+			("abm_low")
+		}
+		{place "mgun2"
+			{type "mgun_hull"}
+			{weapon "flamer_t_rus" filled}
+			{foresight "foresight5"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+		}
+		{place "mgun1"
+			{type "mgun_rear"}
+			{weapon "dt" filled}
+			{foresight "foresight4"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+		}
+		{place "mgun3"
+			{type "mgun_hull"}
+			{weapon "dt" filled}
+			{foresight "foresight6"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+		}
+	}
+
+	{mass 47500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.183))
+		{Locomotion ("locomotion")
+			{MaxSpeed	22}
+			{maxSpeedAtMaxTurn 8.5}
+			{StartTime	18}
+			{TurnTime	11}
+			{TurnStart  1.9} 
+    		{BrakeTime  1.5}
+     		{StopTime   2.5} 
+    		{TurnRadius 10} 
+    		{TurnStop   1}
+		{Gears	0.1 0.5 1.0}
+		{RearGears 0.1 0.45} 
+		}
+		{FuelBag
+			{volume 600 }	
+			{rate	125 }   
+			{remain 600 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  10}
+        	{Slow  12}
+    	}
+	}
+	
+	{Extension "kv-8_1941.mdl"}
+	
+	{bone "turret"
+		{speed 0.0065}
+	}
+	
+}

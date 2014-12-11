@@ -12,15 +12,12 @@
 
 {"steyr_rso"		("vs" c(0) t(all) s(ger) n(2) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 0.0}}
 
-;{"sdkfz303"			("v1" c(0) t(all) s(ger) n1(0) n2(0) g(b6) sc(12.50) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}
-
 
 ;°°°Button 2°°°
 {"mg42_stan"        ("vs" c(0) t(all) s(ger) n(2) g(c1) sc(6.00) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 0.5}}
 {"sgrw42"           ("vs" c(0) t(all) s(ger) n(2) g(c2) sc(17.50) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore 1.0}}
 
 {"flak38_wheeled"   ("vs" c(0) t(all) s(ger) n(2) g(c3) sc(8.50) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 0.5}}
-
 {"pak36"         	("vs" c(0) t(all) s(ger) n(2) g(c4) sc(6.50)  b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore 1.0}}
 {"pak38"            ("vs" c(0) t(all) s(ger) n(2) g(c5) sc(11.25) b(v2) cw(2) cp(10)) {level 1} {cost 250} {fore 1.0}}
 {"pak40"            ("vs" c(0) t(all) s(ger) n(2) g(c6) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 400} {fore 1.0}}
@@ -29,6 +26,9 @@
 
 {"nebelwerfer41"    ("vs" c(0) t(all) s(ger) n(2) g(c9) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
 {"sdkfz4"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 350} {fore 1.0}}
+
+{"75mm_leig18"      ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
+{"sig33" 		    ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 550} {fore 1.0}}
 
 {"lefh18"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 400} {fore 1.0}}
 {"wespe"            ("v" c(0) t(all) s(ger) n1(4) n2(1) g(c12) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 500} {fore 1.0}}

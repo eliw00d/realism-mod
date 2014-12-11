@@ -45,11 +45,12 @@
 				0.152497	-0.449015	8.66369
 			}
 			{VolumeView "body.ply"}
-			{bone "turret"
+			{bone revolute "turret"
 				{parameters "id=turret;"}
 				;{animation
 				;	{sequence "repair" {file "turret_r.anm"} {speed 0.6}}
 				;}
+				{limits -6 6}
 				{Position 10.0649	0.201273	2.82634}
 				{VolumeView "turret.ply"}
 				{bone revolute "gun_rot"

@@ -1,0 +1,107 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "m15.mdl"}
+	{extension "crew_m15.ext"}
+	{props "vehicle" "armored_car" "tank" "turret" "with_gun" "wheeled" "explosion_throw_crew" "vision_vehicle_medium" "muzzle_medium"}
+	
+	{extender "enumerator"}
+	
+	;{volume "sticky"
+	;	{tags "grenade_fg_target"}
+	;	{able clear {contact} {touch}}
+	;	{component "sticky_body"}
+	;}
+	;{component "sticky_body"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "roll"
+		{thickness 15}
+	}
+	{volume "body7"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "gun"
+	}
+	{Volume "turret"
+		{thickness 10}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	("armor_light" args 1.0)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+	{extender "inventory"
+		{Box
+			{item "ammo hmgun" 2500}
+                      		{item "bullet37 zenite" 600}
+                               	}
+	}
+	{Weaponry
+                {place "gun"
+                	{RestoreIKAfterAim}
+		{weapon "37mm_m1a2" filling "ammo bullet37 zenite" 5}        
+			("abm_zenite")
+			{charger "gunner"}
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{weapon "browning_x2" filled}
+			{Barrels 2}
+                      		{gunner "gunner2"}
+			{charger "gunner2"}
+                     		{basic}
+		}
+	}  	
+  	
+	{sensor
+		{visor "main"
+			{bone "mgun"}
+		}
+	}
+
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed 35}
+	  		{maxSpeedAtMaxTurn 12}
+		}
+		{FuelBag
+			{volume 230 }	
+			{rate	60 }   
+			{remain 230 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  12}
+        	{Slow  20}
+    	}
+		; left track must be first
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.4) boneleft("wheell4") boneright("wheelr4"))
+		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+	}
+	{mass 7000}
+
+}

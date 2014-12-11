@@ -1,0 +1,116 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+
+	{extender "enumerator"}
+	{collider "tank.heavy"}
+	{props "heavy" "-turret" "vision_vehicle_high" "muzzle_maximum"}
+
+
+	("armor_engine"  t(50 75 60 30))
+        ("armor_spa_heavy" armor(75 60 60 30))
+        ("armor_mantlet" t(60))
+
+        ("crew_4_human")
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv-85"}  {base "close"}}
+			{reverse 	{end	"emit_tank_1_hold"}  {base "close_driver" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Kv-85"}  {base "close_driver"}}
+			{reverse 	{end	"emit_tank_1_hold"}  {base "close_driver" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	("seat_human" place(seat5) bone(seat05) door(emit3)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit5)  animation(armor1))
+        
+	{extender "inventory"
+		{box
+                        	         {item "ammo bullet152 ap" 9}
+		         {item "ammo bullet152 fg" 10}	
+		}
+	}
+        {Weaponry
+        ("restore_ik_time")
+		{place "gun"
+			{weapon "152mm_ML20a" filling "ammo bullet152" 1}
+            		{RestoreIKAfterAim}
+			("abm_low")
+		}
+        }
+
+	{mass 46000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.23))
+		{Locomotion ("locomotion")
+			{MaxSpeed 	       22} ; максимальная скорость, kmph
+			{maxSpeedAtMaxTurn 7}
+			{StartTime 	        17} ; время разгона до макс. скорости с 0, seconds
+                        {BrakeTime         0.75}
+                        {StopTime       1}	 ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     	7} ; мин. радиус разворота, meter
+			{TurnTime		8} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	         1}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.1 0.2 0.5 0.75 1.0} ; передаточные коэф-ты коробки передач
+                        {RearGears 0.3} ; передаточные коэф-ты коробки передач
+		}
+        {speed
+			{Slow	11	}
+			{Normal	16}
+			{Fast	22	}
+		}
+		{FuelBag
+			{volume 600 }	; liters
+			{rate	119 } 	; liters per kilometer
+			{remain 600 }
+			{fuel "fuel"}
+		}
+	}
+
+	{Extension "su152.mdl"}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+        	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+        	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+        	}
+	
+      
+                {volume "trackleft"
+		{tags "trackleft"}
+		{component "trackleft"}
+	}
+
+        	{volume "trackright"
+		{tags "trackright"}
+		{component "trackright"}
+	}
+	
+	{Volume "engine"
+	}
+	{Volume "gun"
+	}
+	{Volume "mantlet"
+	}
+}

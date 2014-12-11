@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "kv1s_turret"}
+	{bump "$/model/kv1s_turret_bp"}
+	{specular "$/model/kv1s_turret_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/animation/kv_track"}
+	{blend test}
+}

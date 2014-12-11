@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "m4a3 calliope_xx"}
+	{specular "$/model/m4a3 calliope_sp"}
+	{color "229 229 229 25"}
+	{blend test}
+}

@@ -62,7 +62,7 @@
 		}
 		{move {obstacle "close"}}
 		{attack {obstacle "open"}}
-		(mod "mp" {rotate_ik_Limit 15})
+		(mod "mp" {rotate_ik_Limit 0})
 	}
 
 	{Chassis "track"

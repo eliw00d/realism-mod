@@ -1,5 +1,0 @@
-{material bump
-	{diffuse "pak36_x"}
-	;{bump "pak36_bp"}
-	{blend test}
-}

@@ -5,7 +5,7 @@
 	{rechargeTime 7}
 	("range_long")
 
-	("range" r(40))
+	("range" r(32))
 	("speed" s(853))
 	("caliber_large")            
 	{projectileDamage 169}

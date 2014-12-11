@@ -1,0 +1,19 @@
+{game_entity
+	{Extension "su152_xx.mdl"}
+	{volume "body"
+        	}
+	{volume "body2"
+        	}
+	{volume "body3"
+        	}
+                {volume "trackleft"
+	}
+        	{volume "trackright"
+	}
+	{Volume "engine"
+	}
+	{Volume "gun"
+	}
+	{Volume "mantlet"
+	}
+}

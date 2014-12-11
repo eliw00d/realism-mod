@@ -41,8 +41,10 @@
 ;°°°Button 4°°°
 {"m5a1"             ("v" c(0) t(all) s(usa) n1(3) n2(1) g(d4) sc(15.00) b(v4) cw(0) cp(5)) {level 1} {cost 400} {fore 0}}
 {"m24"              ("v" c(0) t(all) s(usa) n1(3) n2(1) g(d5) sc(19.00) b(v4) cw(0) cp(5)) {level 1} {cost 650} {fore 0}}
+{"m4a1"          	("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 650} {fore 1.0}}
 {"m4a3_75"          ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 800} {fore 1.0}}
-;{"m4a3_76"          ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 1100} {fore 1.0}}
+{"m4a1_76w"         ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 1050} {fore 1.0}}
+;{"m4a3_76w"          ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e3) sc(22.00) b(v4) cw(0) cp(15)) {level 1} {cost 1100} {fore 1.0}}
 {"m4a3e2_jumbo"     ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e5) sc(50.00) b(v4) cw(0) cp(30)) {level 1} {cost 1150} {fore 1.0}}
 {"m4a3e8"         	("v" c(0) t(all) s(usa) n1(4) n2(1) g(e4) sc(35.00) b(v4) cw(0) cp(15)) {level 1} {cost 1200} {fore 1.0}}
 {"m4a3e2_jumbo_76"  ("v" c(0) t(all) s(usa) n1(4) n2(1) g(e5) sc(50.00) b(v4) cw(0) cp(30)) {level 1} {cost 1450} {fore 1.0}}

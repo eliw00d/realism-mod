@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "sherman m4a3e8_x"}
+	{specular "$/model/sherman m4a3e8_sp"}
+	{color "229 229 229 25"}
+	{blend test}
+}
