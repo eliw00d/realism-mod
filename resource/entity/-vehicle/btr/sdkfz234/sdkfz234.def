@@ -117,6 +117,6 @@
 	{Extension "sdkfz234.mdl"}
 
 	{bone "turret"
-		{speed 0.018}
+		{speed 0.00222222222222222222222222222222}
 	}
 }

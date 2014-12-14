@@ -99,6 +99,6 @@
 	}
 	{Extension "sdkfz222.mdl"}
 	{bone "turret"
-		{speed 0.025}
+		{speed 0.00555555555555555555555555555556}
 	}
 }

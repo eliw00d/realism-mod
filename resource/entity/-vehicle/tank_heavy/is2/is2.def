@@ -169,7 +169,7 @@
 	{Extension "is2.mdl"}
 
 	{bone "turret"
-		{speed 0.0068}
+		{speed 0.00518518518518518518518518518519}
 	}
 	{bone "turret_mgun"
 		{speed 0.02}

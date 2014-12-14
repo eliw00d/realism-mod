@@ -133,7 +133,7 @@
 	{Extension "pz6bh.mdl"}
 
 	{bone "turret"
-		{speed 0.003}
+		{speed 0.00703703703703703703703703703704}
 	}
 
 }

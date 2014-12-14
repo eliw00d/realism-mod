@@ -134,7 +134,7 @@
 	{Extension "m18.mdl"}
 
 	{bone "turret"
-            {speed 0.008}
+            {speed 0.00888888888888888888888888888889}
         }
 
         {bone "gun_rot"

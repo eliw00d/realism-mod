@@ -148,6 +148,11 @@
         	{Slow  12}
     	}
 	}
+	
+	{bone "turret"
+		{speed 0.00888888888888888888888888888889}
+	}
+	
 	{bone "turret_mgun"
 		{limits -30 30}
 		{speed 0.03}

@@ -160,6 +160,11 @@
     	}
     }
 	{Extension "m10wolverine.mdl"}
+	
+	{bone "turret"
+		{speed 0.00296296296296296296296296296296}
+	}
+	
 	{bone "turret_mgun"
 		{limits -22 38}
 		{speed 0.03}

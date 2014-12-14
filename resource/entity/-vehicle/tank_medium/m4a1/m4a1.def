@@ -133,7 +133,7 @@
 	{bone "gun_rot"
 		{limits -14 10}
 	}
-	{bone "turret"		
-		{speed 0.011}
+	{bone "turret"
+		{speed 0.00888888888888888888888888888889}
 	}
 }

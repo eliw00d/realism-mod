@@ -152,7 +152,7 @@
 	}
 	{Extension "m16.mdl"}
 	{bone "turret"
-		{speed 0.02}
+		{speed 0.02222222222222222222222222222222}
 	}
 	{bone "gun_rot"
 		{limits -7 10}

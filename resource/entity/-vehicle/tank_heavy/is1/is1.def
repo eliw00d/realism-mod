@@ -156,7 +156,7 @@
 		{speed 0.004}
 	}
 	{bone "turret"
-		{speed 0.0068}
+		{speed 0.00518518518518518518518518518519}
 	}
 	{bone "coaxial_mgun"
 		{limits 0}

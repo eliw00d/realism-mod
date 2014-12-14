@@ -91,7 +91,7 @@
 	{Extension "pz2l.mdl"}
 
 	{bone "turret"
-		{speed 0.015}
+		{speed 0.02222222222222222222222222222222}
 	}
         {bone "foresight3"
 		{limits -1 1}

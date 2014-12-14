@@ -150,6 +150,10 @@
 	}
 	
 	{Extension "pz5g.mdl"}
+	
+	{bone "turret"
+		{speed 0.00740740740740740740740740740741}
+	}
 
 	{bone "turret_mgun"
 		{limits -30 30}

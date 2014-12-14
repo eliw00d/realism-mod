@@ -151,6 +151,11 @@
 		{DisableMoveWhileFiring}
 	}
 	{Extension "m4a3c.mdl"}
+	
+	{bone "turret"
+		{speed 0.00888888888888888888888888888889}
+	}
+	
 	(mod "mp"
 		{brain
 			{properties

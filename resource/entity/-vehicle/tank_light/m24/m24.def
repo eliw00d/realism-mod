@@ -117,7 +117,7 @@
     {Extension "m24.mdl"}
 
     {bone "turret"
-        {speed 0.01}
+        {speed 0.00888888888888888888888888888889}
     }
     {bone "mgun_coaxial"
         {limits 1}

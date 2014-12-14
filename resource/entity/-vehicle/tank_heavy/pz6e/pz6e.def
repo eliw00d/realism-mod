@@ -157,6 +157,11 @@
     	}
 	}
 	{Extension "pz6e.mdl"}	
+	
+	{bone "turret"
+		{speed 0.00222222222222222222222222222222}
+	}
+	
 	{bone "turret_mgun"
 		{limits -20 40}
 		{speed 0.03}
