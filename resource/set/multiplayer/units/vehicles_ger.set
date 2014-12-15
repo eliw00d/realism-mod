@@ -27,8 +27,8 @@
 {"nebelwerfer41"    ("vs" c(0) t(all) s(ger) n(2) g(c9) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
 {"sdkfz4"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 350} {fore 1.0}}
 
-{"75mm_leig18"      ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
-{"sig33" 		    ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 550} {fore 1.0}}
+;{"75mm_leig18"      ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 250} {fore 1.0}}
+;{"sig33" 		    ("vs" c(0) t(all) s(ger) n(2) g(c8) sc(21.00) b(v2) cw(2) cp(15)) {level 1} {cost 550} {fore 1.0}}
 
 {"lefh18"           ("vs" c(0) t(all) s(ger) n(2) g(c110) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 400} {fore 1.0}}
 {"wespe"            ("v" c(0) t(all) s(ger) n1(4) n2(1) g(c12) sc(42.50) b(v2) cw(0) cp(15)) {level 1} {cost 500} {fore 1.0}}

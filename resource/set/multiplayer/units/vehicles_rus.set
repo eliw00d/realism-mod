@@ -24,7 +24,7 @@
 {"52k"              ("vs" c(0) t(all) s(rus) n(2) g(c3) sc(6.75)  b(v2) cw(2) cp(5)) {level 1} {cost 450} {fore 1.0}}
 {"bs3"             	("vs" c(0) t(all) s(rus) n(2) g(c7) sc(16.25) b(v2) cw(2) cp(15)) {level 1} {cost 700} {fore 1.0}}
 
-{"76mm_obr1927"    	("vs" c(0) t(all) s(rus) n(2) g(c7) sc(16.25) b(v2) cw(2) cp(15)) {level 1} {cost 200} {fore 1.0}}
+;{"76mm_obr1927"    	("vs" c(0) t(all) s(rus) n(2) g(c7) sc(16.25) b(v2) cw(2) cp(15)) {level 1} {cost 200} {fore 1.0}}
 
 {"bm13"             ("vs" c(0) t(all) s(rus) n(2) g(c8) sc(62.50) b(v2) cw(0) cp(20)) {level 1} {cost 250} {fore 1.0}}
 

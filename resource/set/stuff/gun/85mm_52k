@@ -1,3 +1,15 @@
-{from "85mm_zis53"     ; "85mm_52k"
-{rechargeTime 3}
+{from "pattern gun"     ; "85mm_52k"
+	{filling "bullet85"}
+	{fireSound "gun/85to100_cal/85mm_zis53"}
+	{reloadSound "gun_r04"}
+	{rechargeTime 6}
+	("range_long")
+	
+	("range" r(32))
+	("speed" s(792))
+	("caliber_large")
+	{projectileDamage 139}   
+	("damage" a(139) b(133) c(123) d(114) e(105))
+	
+	("accuracy_high")
 }

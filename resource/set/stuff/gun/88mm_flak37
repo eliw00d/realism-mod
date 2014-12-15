@@ -2,7 +2,7 @@
 	{filling "bullet88"}
 	{fireSound "gun/85to100_cal/88mm_flak41"}
 	{reloadSound "gun_r04"}
-	{rechargeTime 5}
+	{rechargeTime 4}
 	("range_long")
 	
 	("range" r(40))
