@@ -129,16 +129,16 @@
 
 	{Chassis
 		{Locomotion ("locomotion")
-			{MaxSpeed	30}
+			{MaxSpeed	72}
 	  		{maxSpeedAtMaxTurn 12}		
 			{StartTime	8}
 			{BrakeTime	1.5}	
 			{StopTime	3}
-			{TurnRadius	5}
+			{TurnRadius	18}
 		}
 		{FuelBag
 			{volume 230 }	
-			{rate	40 }   
+			{rate	0.72 }   
 			{remain 230 }
 			{fuel "fuel"}
 		}

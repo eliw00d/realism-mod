@@ -123,12 +123,12 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.3) len(0.55))
 		{Locomotion ("locomotion")
-			{maxspeed   27}
+			{maxspeed   35}
 			{maxSpeedAtMaxTurn 11}
 			{StartTime  15}
 			{TurnTime   11}
 			{TurnStart  1.9}			
-			{TurnRadius 10} 
+			{TurnRadius 23} 
     		{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
@@ -136,9 +136,9 @@
 			{RearGears  0.34}
 		}
 		{FuelBag
-			{volume 640 }	
-			{rate	220 }   
-			{remain 640 }
+			{volume 764 }	
+			{rate	4.75 }   
+			{remain 764 }
 			{fuel "fuel"}
 		}
 		{speed

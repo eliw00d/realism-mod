@@ -120,17 +120,17 @@
 	{mass 7000}
 	{Chassis
 		{Locomotion ("locomotion")
-			{MaxSpeed	42}
+			{MaxSpeed	89}
 	  		{maxSpeedAtMaxTurn 15}	
 			{StartTime	7}
 			{BrakeTime	1.5}	
 			{StopTime	2}
-			{TurnRadius	6}
+			{TurnRadius	17}
 		}
 		{FuelBag
-			{volume 215 }	
-			{rate	30 }   
-			{remain 215 }
+			{volume 210 }	
+			{rate	0.38 }   
+			{remain 210 }
 			{fuel "fuel"}
 		}
 		{speed

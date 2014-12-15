@@ -135,7 +135,7 @@
 		}
 		{FuelBag
 			{volume 470 }	
-			{rate	235 }   
+			{rate	2.35 }   
 			{remain 470 }
 			{fuel "fuel"}
 		}
